@@ -162,6 +162,7 @@
 	#player,
 	#d,
 	#j{
+		/* doesn't do anything? */
 		padding:1em;
 	}
 	#player {

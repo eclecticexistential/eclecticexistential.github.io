@@ -7,6 +7,7 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
 	<link rel="stylesheet" href="../style.css">
 	<link rel="stylesheet" href="weatherStyle.css">
+	<link rel="stylesheet" href="nutritionStyle.css">
     <title>Jessica Cottner's Programing Portfolio</title>
   </head>
 
@@ -17,7 +18,7 @@
 			<a href="../index.html"><li>Home</li></a>
 			<a href="../css/cascading.html"><li>CSS</li></a>
 			<a href="../javascript/js.html"><li>Javascript</li></a>
-			<a href="ajax/AJAX.html"><li class="selected">AJAX</li></a>
+			<a href="AJAX.html"><li class="selected">AJAX</li></a>
 		</ul>
 	</nav>
   
@@ -87,16 +88,37 @@
 			<input type="text" placeholder="Name a Place" id="cityInfo"/>
           <input type="button" id="getWeather" class="btn btn-info" value="Weather Update &raquo;"/>
 		</div>
-        <div class="col">
-          <h3>Javascript</h3>
-          <p>
-            Unraveling the mystery of Javascript continues to lead me to interesting places. 
-			Beginning projects include a blackjack game, aka 21, a palidrome tester, and a Body Mass Index calculator.
-			One of my newest projects is a Novel Color Picker.
-          </p>
-		  <img src="" alt=""></img>
-          <a class="btn btn-warning" href="#" role="button">Interactive JS Programs &raquo;</a>
-       </div>
+		
+
+		<div class="col" id="nutritionApp">			
+			<h3>Nutrition App</h3>
+				<input type="text" placeholder="What are you craving?" id="area" />
+					<p>Powered by <a href="http://www.nutritionix.com/business/api">Nutritionix API</a></p>
+					<div id="results">
+						<div id="firstResult">
+							<div id="s"></div>
+							<div id="b"></div>
+							<div id="c"></div>
+						</div>
+							<div id="secondResult">
+								<div id="s1"></div>
+								<div id="b1"></div>
+								<div id="c1"></div>
+							</div>
+							<div id="thirdResult">
+								<div id="s2"></div>
+								<div id="b2"></div>
+								<div id="c2"></div>
+							</div>
+					</div>
+			<a class="btn btn-warning" id="submit" value="Sumbit" role="button">Get Nutritional Info &raquo;</a>
+		</div>
+	   
+	   
+	   
+	   
+	   
+	   
         <div class="col">
           <h3>API & AJAX</h3>
           <p>Although AJAX is primarly coded in JS and jQuery, these interesting features deserve an entire page dedicated to them.
@@ -118,5 +140,7 @@
       </footer>
 	</div>
 	<script src="weather.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="nutrition.js"></script>
   </body>
 </html>

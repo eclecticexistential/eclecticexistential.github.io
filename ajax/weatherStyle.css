@@ -1,6 +1,7 @@
 /* Styles for Weather App*/
 
-#t{
+#t,
+#getWeather{
 	cursor:pointer;
 }
 
@@ -18,10 +19,7 @@
 #output{
 	margin-top: 6em;
 	}
-	
-#join{
-	
-}
+
 	
 #all{
 	position:relative;

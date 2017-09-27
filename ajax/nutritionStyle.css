@@ -1,0 +1,45 @@
+#nutritionApp{
+	max-height:24em;
+	font-size: 1.5em;
+	text-align:center;
+}
+
+#nutritionApp h3{
+	text-align:center;
+	color:#040;
+	margin:-0.75em 0 0.5em;
+	text-shadow: 0 0 5px lightblue;
+}
+
+#nutritionApp p{
+	font-size:0.5em;
+}
+#results{
+	font-size:0.70em;
+	display:flex;
+	flex-direction:column;
+	margin-top:0.5em;
+}
+
+#area{
+	margin:0 1em;
+}
+
+#firstResult,
+#secondResult,
+#thirdResult{
+	justify-content: space-between;
+	margin-bottom:0.75em;
+}
+
+#s,#s1,#s2{
+	background:#CCC;
+}
+
+
+#submit{
+	cursor:pointer;
+}
+
+@media(min-width:300px){
+}
