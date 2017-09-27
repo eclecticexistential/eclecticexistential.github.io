@@ -1,7 +1,7 @@
 //CSS carousel for mainzengarden//
 
-var L = $("#left");
-var R = $("#right");
+var L = document.getElementById("left");
+var R = document.getElementById("right");
 var zenArray=["zengarden.css"];
 
 function fillArray(){
@@ -16,7 +16,7 @@ fillArray()
  // carousel //
 
 function changeStyle(n){
-	var x = document.getElementById("change-me").attr("href");
+	var x = $("#change-me").attr("href");
 	var y = $.inArray(x,zenArray);
 	var z = y+n;
 	if(z>zenArray.length-1){z=0};

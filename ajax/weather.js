@@ -2,7 +2,7 @@
 function ajaxCall(){
   var loc=document.getElementById("cityInfo").value;
   var weather = new XMLHttpRequest();
-      weather.open("GET","http://api.openweathermap.org/data/2.5/weather?q=" + loc + "&appid=002c514b7cc57302b542830301bf1422",false);
+      weather.open("GET","https://api.openweathermap.org/data/2.5/weather?q=" + loc + "&appid=002c514b7cc57302b542830301bf1422",false);
       weather.send(null);
   var r=JSON.parse(weather.response);
   var des= r.weather[0].description;
