@@ -1,0 +1,45 @@
+body{margin:0; background-color:#444;}
+header{text-align:center; color:olive; font-family:arial; font-size:24px;padding-top:50px;padding-bottom:10%;text-shadow:1px 1px 3px #FFF;}
+
+header h1{font-size:88px;color:#BB4;}
+
+#zen-summary,#zen-explanation,#zen-benefits,footer{text-align:center;color:white;}
+
+header,#zen-preamble,#zen-explanation,#zen-participation,#zen-benefits,#zen-requirements,#design-selection,#design-archives,#zen-resources{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center; 
+  flex-direction: column;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+header, #zen-preamble,#zen-participation,#zen-requirements,#design-selection, #zen-resources{
+	background-image:url("http://www.gishaag.net/wp-content/uploads/IMG_8005.jpg");
+	}
+
+#zen-summary p,#zen-explanation p,#zen-benefits p{
+  font-size: 24px; text-shadow: 1px 1px 3px #000;
+}
+
+p,footer{
+	padding:1em;	
+}
+h3{
+	padding:0.5em;
+}
+
+a{color:#7AD;
+font-size: 24px;
+text-shadow: 1px 1px 3px #000;
+text-decoration: none;}
+
+.sidebar ul{color:transparent;}
+.sidebar #zen-resources, .sidebar #design-archives, .sidebar #design-selection{padding-bottom:2%;}
+
+h3{color:white;font-size:42px;text-shadow:1px 1px 3px #8BE;}
+#zen-preamble p,#zen-participation p,#zen-requirements p{
+  font-family: montserrat; font-size:32px; padding:0% 10% 0% 10%;
+  text-shadow: 1px 1px 3px #FFF;
+}

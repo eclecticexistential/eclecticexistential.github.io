@@ -1,0 +1,177 @@
+/* BMI calc styles */
+#BMI,
+#colorPicker{
+	height: 35em;
+	text-align:center;
+}
+#BMI label {
+	display:block;
+	font-weight:bold;
+}
+#BMI form {
+	padding-bottom:1em;
+}
+#BMI select{
+	margin-bottom: 1em;
+}
+#BMI input {
+	text-align:center;
+	margin-bottom:0.5em;
+}
+
+/* Styles for Color Picker */
+
+#colorPicker{
+	color:#FFF;
+	background:#000;
+}
+.slider{
+	margin-top:0.3em;
+}
+.box_o_color{
+	border: 1px solid grey;
+}
+.top .box_o_color{
+	padding:0.3em;
+}
+.top label:first-child{
+	color:red;
+}
+
+.top label:nth-of-type(2){
+	color:green;
+}
+
+.top label:nth-of-type(3){
+	color:dodgerblue;
+}
+
+.top label:nth-of-type(2),
+.top label:nth-of-type(3){
+	padding-top:0.5em;
+}
+
+.bottom .box_o_color:first-child{
+	margin-top:1.75em;
+	color:purple;
+}
+
+.bottom .box_o_color:nth-of-type(2){
+	color:brown;
+}
+
+.bottom .box_o_color:nth-of-type(3){
+	color:turquoise;
+}
+
+/*Styles for Play 21*/
+
+#reset{
+	margin:1.25em 0;
+}
+
+#game,
+#reset,
+#buttons{
+	text-align:center;
+}
+
+#buttons .button{
+	width:30%;
+	padding:0.5em;
+}
+#play{
+	color:#FFF;
+	background:green;
+	border-color:green;
+}
+#hit{
+	background:red;
+	border-color:red;
+}
+#stand{
+	background:yellow;
+	border-color:yellow;
+}
+#pa{
+	border:2px solid #000;
+	background:purple;
+	color: #FFF;
+	padding: 10px 15px;
+	font: 18px arial;
+}
+#dealer,
+#player{
+	display:flex;
+	flex-direction: row;
+}
+
+
+
+/*Styles for Larger Screens*/
+
+@media (min-width:720px) {
+
+/*BMI styles*/
+	#BMI,
+	#colorPicker{
+		height:30em;
+	}
+	#BMI form label:nth-of-type(1){
+		padding-right:1em;
+	}
+	#BMI h3:nth-of-type(2){
+		margin-top:0.5em;
+	}
+	#BMIBtn{
+		margin:1em 3.5em;
+	}
+/*ColorPicker styles*/
+	.top .box_o_color{
+		padding:0.5em;
+	}
+	
+	.bottom .box_o_color{
+		display:inline-block;
+		min-height:95px;
+		min-width:95px;
+	}
+	.bottom .box_o_color label{
+		margin: 2.2em 1.25em;
+	}
+/*Play 21 Styles*/
+	.container:nth-of-type(3){
+		border-top:1px solid #FFF;
+	}
+	#buttons .button{
+		width:25%;
+		margin: 0 1em;
+	}
+	#playArea{
+		background:#508;
+		display:flex;
+	}
+	#game {
+		margin-bottom:1em;
+	}
+	#reset{
+		margin: 3em 0;
+		min-height:50px;
+	}
+	#dealer,
+	#player,
+	#d,
+	#j{
+		padding:1em;
+	}
+	#player {
+		float:left;
+	}
+	#dealer{
+		float:right;
+	}
+	
+	#theCards{
+		margin:0 6em;
+	}
+}

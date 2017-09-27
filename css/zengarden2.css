@@ -1,0 +1,75 @@
+body{
+  background-color: #CDC;
+}
+
+#zen-intro{
+  position: fixed;
+  position: relative;
+  margin-top:-1em;
+}
+#zen-intro h1{
+  font-size: 72px;
+  position: absolute;
+  margin-left: 3%;
+  color: #537373;
+  position: fixed;
+}
+#zen-intro h2{
+	font-family: montserrat;
+	font-size: 18px;
+	color: #C08A8A;
+	position: absolute;
+	margin-top: 7%;
+	margin-left: 11%;
+	word-spacing: 20px;
+	position: fixed;
+}
+#zen-summary{
+	font-size: 14px;
+	margin-top: 11%;
+	margin-left: 13%;
+	width: 20%;
+	position: fixed;
+}
+.sidebar{
+	position: fixed;
+	font-size: 14px;
+	float: left;
+	margin-top: 20%;
+	margin-left: 13%;
+	color: #C0A38A;
+	text-align:center;
+	}
+a{
+	text-decoration: none;
+	color: #149;
+}
+li{
+	list-style:none;
+}
+#zen-preamble{
+	display: block;
+	float: right;
+	width: 50%;
+	margin-top: 9%;
+}
+.main,.preamble{
+	padding-right:2em;
+}
+.main h3{
+	padding-top:1em;
+}
+#zen-supporting{
+	display: block;
+	float: right;
+	width: 50%;
+	margin-left: 40%;
+}
+#zen-preamble h3, #zen-supporting h3{
+  color:#718787;
+}
+
+footer{
+	text-align:center;
+	padding:1em;
+}

@@ -1,0 +1,65 @@
+body{
+	background: url("http://i.huffpost.com/gadgets/slideshows/332838/slide_332838_3311261_free.jpg") no-repeat fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+body p{
+  font-family: 'montserrat', arial;
+}
+#zen-intro h1{
+  font-size: 72px;
+  margin: 0px;
+  text-align: center;
+  box-shadow: 1px 1px 5px #000;
+  text-shadow: 2px 2px 3px #FFF;
+}
+#zen-intro h2{
+  margin-top: 11%;
+}
+#zen-intro h2, #zen-summary{
+  display: inline-block;
+  width: 40%;
+  margin-right: -20%;
+  margin-left: 13%; 
+  border-radius: 5px;
+}
+#zen-preamble{
+	margin-top: 8.5%;
+	border-radius: 5px;
+	display: inline-block;
+	float: right;
+	width: 40%;
+	margin-right: 13%;
+}
+#zen-intro h2, #zen-summary, #zen-preamble,#zen-supporting,.sidebar{
+	background-color: rgba(0,0,0,0.3);
+	padding: 20px;
+	color: #FFF;
+}
+#zen-supporting{
+	display: inline-block;
+	margin-top: 5%;
+	width: 50%;
+	border-radius: 5px;
+	padding: 15px;
+}
+a{ 
+text-decoration: none;
+color: dodgerblue;
+}
+
+.sidebar{
+  display: inline-block;
+  padding: 15px;
+  border-radius: 5px;
+  float: right;
+  margin-top: 5%;
+}
+.sidebar li {
+	list-style: none;
+}
+footer{
+	text-align:center;
+}

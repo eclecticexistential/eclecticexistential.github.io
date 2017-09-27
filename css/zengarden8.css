@@ -1,0 +1,32 @@
+/*Now the styles*/
+* {
+  margin: 0; 
+  padding: 0;
+}
+body {
+  background: #38218D; 
+  font-family: arial, verdana, tahoma;
+}
+
+header{color:#E3AD46;box-shadow:1px 1px 3px #000;border-radius:15px; animation: shine 5s;}
+@keyframes shine{
+  0%{border-radius:none;}
+  25%{margin:0;}
+  50%{color:#38218D;}
+  75%{text-shadow:1px 1px 4px #FFF;}
+  100%{border-radius:15px;}
+}
+h1{font-size:64px;text-shadow:1px 1px 4px #747;}
+h2{text-align:right;color:#865800;}
+#zen-summary{width:25%;margin:3%;padding:1%;}
+header,#zen-preamble,#zen-explanation,#zen-participation,#zen-benefits,#zen-requirements{box-shadow:1px 1px 3px #000;margin: 5% 20%; padding:2%;
+  align-items: center;
+  flex-direction: column;
+  background-size: cover;
+  background-attachment: fixed;}
+h3{padding-bottom:10px;color:#E3AD46;text-shadow:1px 1px 4px #747;}
+  header,#zen-preamble,#zen-explanation,#zen-participation,#zen-benefits,#zen-requirements{background-image:url("https://www.iwantthatcourse.com.au/sites/default/files/blog-images/hyams-beach-whitest-sand_0.png")}
+  footer{text-align:center;}
+  #zen-preamble,#zen-explanation,#zen-participation,#zen-benefits,#zen-requirements{margin:5% 5% 5% 35%;}
+  .sidebar{margin-top:-115%;width:20%;margin-left:4.3%;padding:2% 1% 2% 3%;}
+  #zen-summary,.sidebar{background-color:rgba(255,255,255,0.5);}

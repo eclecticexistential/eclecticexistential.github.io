@@ -1,0 +1,15 @@
+body{font:18px arial;}
+
+h1{font:72px arial;margin-top:-10px;padding-top:2px;position:fixed;padding-right:30%;z-index:1;background-color:white;}
+h2{font: 32px arial; margin-left:69%;padding-top:144px;margin-top:-1em;position:fixed;background-position:center;
+  background-repeat: no-repeat;
+background-image:url("https://s-media-cache-ak0.pinimg.com/236x/47/aa/67/47aa6783c0cb3a380610bc644eacc552.jpg")}
+#zen-summary{position:fixed;margin-left:71%;margin-top:12%;font-size:14px;padding-right:25px;}
+#zen-preamble{padding-top:10%;padding-left:1%;width:30%;}
+#zen-explanation{padding-left:35%;margin-right:32%;margin-top:-20%;}
+#zen-participation{padding-top:4%;padding-left:1%;width:30%;}
+#zen-benefits{padding-left:1%;width:30%;}
+#zen-requirements{padding-left:35%;margin-right:32%;margin-top:-40%;}
+.sidebar{position:fixed;margin-top:-78%;margin-left:72%;font-size:14px;}
+footer{text-align:center;}
+a{text-decoration:none;color#249;}

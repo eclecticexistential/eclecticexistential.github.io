@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://fonts.googleapis.com/css?family=Archivo+Black|Poppins:300|Quicksand:300|Lato:700" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+	<link rel="stylesheet" href="../style.css">
+	<link rel="stylesheet" href="weatherStyle.css">
+    <title>Jessica Cottner's Programing Portfolio</title>
+  </head>
+
+  <body>
+
+	<nav class="nav">
+		<ul>
+			<a href="../index.html"><li>Home</li></a>
+			<a href="../css/cascading.html"><li>CSS</li></a>
+			<a href="../javascript/js.html"><li>Javascript</li></a>
+			<a href="ajax/AJAX.html"><li class="selected">AJAX</li></a>
+		</ul>
+	</nav>
+  
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="jumbotron">
+		<div class="overlay">
+      <div class="container">
+        <br>
+        <h2>AJAX</h2>
+        <p>Preview Jessica Cottner's AJAX Projects Below Or</p>
+        <a class="btn btn-primary" href="mailto:allofitbra@gmail.com" target= "_blank" role="button">Contact Her Directly  &raquo;</a>
+		</div>
+      </div>
+    </div>
+    <div class="container">
+      <!-- Example row of columns -->
+      <div class="row">
+        <div class="col" id="weatherApp">
+          <h3>Weather App</h3>
+			<h1 id="city"></h1>
+		<div id="join">
+			<div id="all">
+				<div id="moon">
+					<div id="crater"></div>
+					<div id="star1"></div>
+					<div id="star2"></div>
+					<div id="star3"></div>
+					<div id="star4"></div>
+					<div id="star5"></div>
+				</div>
+				<div id="sun">
+					<div id="ray">
+						<div id="ray1">
+							<div id="ray2">
+								<div id="ray3">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+					<div id="cloud">
+						<div id="cloud1">
+							<div id="cloud2">
+								<div id="rain">
+									<div id="rain1">
+										<div id="bolts">
+											<div id="bolt">
+												<div id="bolt1">
+													<div id="bolt2">
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+			</div>
+		</div>
+		<div id="output">
+		<div id="w"></div>
+			<p id='t'></p>
+			<p id='hU'></p>
+			<p id='til'></p>
+			</div>
+			<input type="text" placeholder="Name a Place" id="cityInfo"/>
+          <input type="button" id="getWeather" class="btn btn-info" value="Weather Update &raquo;"/>
+		</div>
+        <div class="col">
+          <h3>Javascript</h3>
+          <p>
+            Unraveling the mystery of Javascript continues to lead me to interesting places. 
+			Beginning projects include a blackjack game, aka 21, a palidrome tester, and a Body Mass Index calculator.
+			One of my newest projects is a Novel Color Picker.
+          </p>
+		  <img src="img/JSCode.png" alt="Example of JS Code"></img>
+          <a class="btn btn-warning" href="#" role="button">Interactive JS Programs &raquo;</a>
+       </div>
+        <div class="col">
+          <h3>API & AJAX</h3>
+          <p>Although AJAX is primarly coded in JS and jQuery, these interesting features deserve an entire page dedicated to them.
+		  Rookie projects include a weather and nutrition app. Newest projects include NASA's APOD.</p>
+		  <img src="img/AJAXCode.png" alt="Example of AJAX Code"></img>
+          <a class="btn btn-info" href="#" role="button">Make AJAX Calls &raquo;</a>
+        </div>
+      </div>
+	</div>
+	<br>
+      <hr>
+	<div class="social-media">
+	  <a href="https://www.facebook.com/search/top/?q=observe%20champion" ><img src="../img/facebook-icon.png" alt="Facebook Icon"></a>
+	  <a href="https://codepen.io/EclecticExistential/" ><img src="../img/codepen-icon.png" alt="Codepen Icon"></a>
+	  <a href="https://github.com/eclecticexistential" ><img src="../img/github-icon.png" alt="Github Icon"></a>
+	  <a href="https://twitter.com/ObserveChampion" ><img src="../img/twitter-icon.png" alt="Twitter Icon"></a>
+      <footer>
+        <p>&copy; 2017 Jessica Cottner</p>
+      </footer>
+	</div>
+	<script src="weather.js"></script>
+  </body>
+</html>

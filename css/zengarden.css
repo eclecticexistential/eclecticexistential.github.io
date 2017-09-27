@@ -1,0 +1,90 @@
+
+body{
+  background-image: url("http://cdn.home-designing.com/wp-content/uploads/2014/02/3-Zen-garden.jpeg");
+  background-size:cover;
+  background-repeat:no-repeat;
+}
+a{
+  text-decoration: none;
+  color: yellow;
+}
+#zen-intro{
+	background:rgba(0,0,0,0.5);
+	color:#FFF;
+	position:relative;
+}
+h1{
+  background: url(https://i.ytimg.com/vi/BgjmhbkPVAI/maxresdefault.jpg);
+  background-size: cover;
+  color: #159;
+  font-size: 72px;
+  border-radius: 100%;
+  height: 220px;
+  width: 220px;
+  text-align: center;
+  padding: 130px;
+  margin:20px;
+  box-shadow: 1px 1px 8px #000;
+  text-shadow: 1px 1px 5px #FFF;
+  display: inline-block; 
+}
+h2,
+#zen-summary,
+#zen-preamble{
+	float:right;
+	position:absolute;
+	top:0;
+	right:0;
+	padding:2em;
+}
+
+#zen-summary,
+#zen-preamble{
+	margin-top:6em;
+	text-align: right;
+	width: 50%;
+}
+
+#zen-preamble{
+	margin-top: 15em;
+}
+
+#zen-supporting{	
+	clear:both;
+	float:right;
+	font-family: 'montserrat';
+	width: 75%;
+	color: #DDD;
+}
+#zen-explanation, #zen-participation, #zen-benefits, #zen-requirements, footer{
+  padding: 1.75em;
+  background-color: rgba(0,0,0,0.5);
+}
+#zen-supporting p{
+  line-height: 25px;
+}
+#zen-participation, #zen-requirements, footer{
+  text-align: right;
+  color: white;
+}
+.sidebar{
+	clear:both;
+	font-family:arial;
+	color:#FFF;
+	font-weight:bold;
+	text-align: center;
+	float:left;
+	padding:1.75em 1em;
+	position:absolute;
+}
+.sidebar h3{
+	color:#DDD;
+}
+.sidebar li {
+	list-style:none;
+}
+footer{
+	float:left;
+	text-align:center;
+	margin-left:14em;
+}

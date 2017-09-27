@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://fonts.googleapis.com/css?family=Archivo+Black|Poppins:300|Quicksand:300|Lato:700" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+	<link rel="stylesheet" href="../style.css">
+	<link rel="stylesheet" href="jsStyle.css">
+    <title>Jessica Cottner's Programing Portfolio</title>
+</head>
+  
+  <body>
+
+	<nav class="nav">
+		<ul>
+			<a href="../index.html"><li>Home</li></a>
+			<a href="../css/cascading.html"><li>CSS</li></a>
+			<a href="js.html"><li class="selected">Javascript</li></a>
+			<a href="../ajax/AJAX.html"><li>AJAX</li></a>
+		</ul>
+	</nav>
+
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="jumbotron">
+		<div class="overlay">
+      <div class="container">
+        <br>
+			<h2>Javascript</h2>
+				<p>Preview Jessica Cottner's JS Projects Below Or</p>
+			<a class="btn btn-primary btn-md" href="mailto:allofitbra@gmail.com" target= "_blank" role="button">Contact Her Directly  &raquo;</a>
+		</div>
+      </div>
+    </div>
+    <div class="container">
+      <!-- Example row of columns -->
+      <div class="row">
+        <div class="col col-xs-2" id="BMI">
+          <h3>Body Mass Index Calculator</h3>
+			<form action="" id="gender">
+			<label for="gender">Enter Bio Gender:</label>
+			<input type="radio" name="gender" id="male" value="male"> Male
+			<input type="radio" name="gender" id="female" value="female"> Female
+			</form>
+			<fieldset>
+			<label for="height">Enter Height:</label> 
+			<input type="text" id="height" placeholder="What's Your Height?"/>
+			<select type="multiple" id="heightunits">
+				<option value="inches" selected="selected">inches</option>
+				<option value="meters">meters</option>
+			</select>
+			<label for="weight">Enter Weight:</label> 
+			<input type="text" id="weight" placeholder="What's Your Weight?"/>
+				<select type="multiple" id="weightunits">
+					<option value="lb" selected="selected">pounds</option>
+					<option value="kg">kilograms</option>
+				</select>
+			</fieldset>
+			<h3>Your BMI is: <span id="output">0</span></h3>
+			<h4>This means you are: <span id="comment"> ?</span> </h4> 
+			<input type="button" class="btn btn-info" value="Compute BMI" id="BMIBtn">
+        </div>
+        <div class="col col-xs-2" id="colorPicker">
+			<div class="title">
+				<h3>A Novel Approach to Picking Colors</h3>
+			</div>
+				<div class="big-container top">
+						<label for="red">Red:
+							<span id="range">0</span>
+						</label>
+					<div class="box_o_color" id="red">
+						<input id="a" class="slider" type="range" min="0" max="255" value="0" />
+					</div>
+						<label for="red">Green:
+							<span id="range1">0</span>
+						</label>
+					<div class="box_o_color" id="green">
+						<input id="b" class="slider" type="range"  min="0" max="255" value="0" />
+					</div>
+						<label for="red">Blue:
+							<span id="range2">0</span>
+						</label>
+						<div class="box_o_color" id="blue">
+							<input id="c" class="slider" type="range"  min="0" max="255" value="0" />
+						</div>
+				</div>
+			<div class="big-container bottom">
+				<div class="box_o_color" id="purple">
+					<label for="rB">Red & Blue</label>
+				</div>
+				<div class="box_o_color" id="brown">
+					<label for="rG">Red & Green</label>
+				</div>
+				<div class="box_o_color" id="turquoise">
+					<label for="GB">Green & Blue</label>
+				</div>
+				<div class="box_o_color" id="all">
+					<label for="all">All RGB</label>
+				</div>
+			</div>
+        </div>
+	</div>
+</div>
+		<div class="container">
+			<div class="row">
+				<div class="col" id="playArea">
+					<h3 id="game">Welcome to 21!</h3>
+							<div id="buttons">
+								<input type="button" class="button" id="play" value="Play!">
+								<input type="button" class="button" id="hit" value="Hit">
+								<input type="button" class="button" id="stand" value="Stand">
+							</div>
+						<div id="reset" value="Play again?">
+						</div>
+						<div id="theCards">
+							<div id="player">
+								<p id="d"></p>
+							</div>
+							<div id="dealer">
+								<p id="j"></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	<br>
+      <hr>
+	<div class="social-media">
+	  <a href="https://www.facebook.com/search/top/?q=observe%20champion" ><img src="../img/facebook-icon.png" alt="Facebook Icon"></a>
+	  <a href="https://codepen.io/EclecticExistential/" ><img src="../img/codepen-icon.png" alt="Codepen Icon"></a>
+	  <a href="https://github.com/eclecticexistential" ><img src="../img/github-icon.png" alt="Github Icon"></a>
+	  <a href="https://twitter.com/ObserveChampion" ><img src="../img/twitter-icon.png" alt="Twitter Icon"></a>
+      <footer>
+        <p>&copy; 2017 Jessica Cottner</p>
+      </footer>
+	</div>
+	<script src="BMI.js"></script>
+	<script src="colorPicker.js"></script>
+	<script src="play21.js"></script>
+  </body>
+</html>

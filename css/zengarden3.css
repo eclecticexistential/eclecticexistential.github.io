@@ -1,0 +1,114 @@
+body { 
+	margin: 0;
+}
+header{
+	background-image: url(http://placeimg.com/800/600/nature);
+	box-sizing: border-box;
+	height: 50vh; 
+	text-align: center; 
+	padding: 2vw;
+	font-size: 5vw;
+}
+header,.page-wrapper,.sidebar,#zen-summary,#zen-preamble,#zen-explanation,#zen-participation,#zen-benefits,#zen-requirements,#design-selection,#design-archives,#zen-resources{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center; 
+  flex-direction: column;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+h1{
+	font-size:8vw;
+	color:#FFF;
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+}
+h3:first-of-type{
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 6vw;
+  padding:0.5em 2em;
+  text-shadow: 2px 3px 3px rgba(0,0,0,0.4);
+}
+#zen-participation,#zen-requirements,#design-selection {
+  background-image: url(http://placeimg.com/800/600/nature);
+}
+div:nth-child(2n-1) {
+  background-image: url(http://danielslawnandgarden.com/wp-content/uploads/2016/05/perennial-garden.jpg);
+}
+div:nth-of-type(odd) {
+  background-image: url(http://www.rd.com/wp-content/uploads/sites/2/2016/04/01-tips-butterfly-garden-vibrant-flowers.jpg);
+}
+p{
+	color:#FFE;
+	text-shadow:1px 3px 3px rgba(0,0,0,0.5);
+	line-height: 20px;
+	font-size:18px;
+	font-family: arial;
+	padding:20px;
+}
+
+h2{
+font-size:62px;
+}
+
+#zen-summary{
+	padding:1em;
+	}
+
+a{
+	color:#7AD;
+	text-decoration: none;
+}
+
+.sidebar a{
+	color:yellow;
+}
+
+.sidebar li {
+	list-style:none;
+	padding:1em;
+}
+
+.sidebar ul{
+	
+	background-color:rgba(0,0,0,0.5);
+}
+
+footer{background:#444;}
+
+#design-archives{  
+	background-image:url(http://placeimg.com/800/600/nature);
+}
+
+#design-archives nav{
+	display:flex;
+	flex:1;
+}
+#design-archives nav li:nth-of-type(1){
+	order:1;
+}
+#design-archives li{
+	margin-right:2em;
+}
+
+#design-selection{
+	background-image:url(http://danielslawnandgarden.com/wp-content/uploads/2016/05/perennial-garden.jpg);
+}
+
+.sidebar{
+	display:flex;
+	flex-direction:row;
+	flex:1;
+}
+
+.sidebar ul{
+	font-family:montserrat;
+	font-size:18px;
+	color:white;
+}
+.sidebar #design-archives ul, #zen-resources ul{
+  display: inline-flex;
+  list-style:none;
+}

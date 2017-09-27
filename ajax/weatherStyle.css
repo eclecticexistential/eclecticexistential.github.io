@@ -1,0 +1,299 @@
+/* Styles for Weather App*/
+
+#t{
+	cursor:pointer;
+}
+
+#weatherApp{
+	text-align:center;
+	color:#735DB5;
+	text-shadow:1px 1px 3px #000;
+	font-size: 1.5em;
+	padding-top:1em;
+	max-height:24em;
+	position:relative;
+	z-index:1;
+	}
+	
+#output{
+	margin-top: 6em;
+	}
+	
+#join{
+	
+}
+	
+#all{
+	position:relative;
+	visibility:hidden;
+	}
+	
+#moon{
+	background-color:white;
+	height:50px;
+	width:50px;
+}
+#crater{
+	background: rgba(0,0,0,0.05);
+	height:30px;
+	width:30px;
+}
+#moon,#crater,#sun{
+  border-radius:50%;
+}
+
+#moon,#sun,#cloud{
+	position:absolute;
+	top:2em;
+	left:3.5em;
+}
+
+#sun{
+  background-color:yellow;
+  height:50px;
+  width:50px;
+}
+
+#ray,#ray1,#ray2,#ray3{
+	position:absolute;
+	background-color:orange;
+	height:50px;
+	width:50px;
+	animation-name: shine;
+	animation-iteration-count: infinite;
+	  opacity:.99;
+	  z-index:-1;
+}
+
+#ray{
+	animation-duration: 14s;
+	animation-timing-function: ease-out;
+}
+#ray1{
+  animation-duration: 12s;
+  animation-timing-function: ease-in;
+}
+#ray2{
+  animation-duration: 8s;
+  animation-timing-function: linear;
+}
+#ray3{
+  animation-duration: 4s;
+  animation-timing-function: linear;
+}
+@keyframes shine{
+	from {
+			transform:rotate(0deg);
+	}
+    to {transform:rotate(360deg);
+	}
+}
+
+#star1,#star2,#star3,#star4,#star5{
+	position:absolute;
+	background-color:white;
+	height:1px;
+	width: 1px;
+	animation-name:sparkle;
+	animation-iteration-count:infinite;
+	animation-timing-function: ease;
+}
+
+#star1{
+	top:0;
+	left:6px;
+  animation-duration: 5s;
+}
+#star2{
+	top:10px;
+	right:0;
+  animation-duration: 3s;
+}
+#star3{
+	bottom:0;
+	left:0;
+  animation-duration: 4s;
+}
+#star4{
+	bottom:5px;
+	right:0;
+  animation-duration:2s;
+}
+#star5{
+	top:0;
+	right:4px;
+  animation-duration:1s;
+}
+@keyframes sparkle{
+  0%{background-color:#DDD;}
+  25%{background-color:#AAA;}
+  50%{background-color:#999;}
+  75%{background-color:#555;}
+  100%{background-color:#CCC;}
+}
+
+#cloud{
+  top: 2.5em;
+  z-index:1;
+  background:#DADADA;
+  width:30px;
+  height:20px;
+  padding:1%;
+  border-top-right-radius:50%;
+  border-top-left-radius:100%;
+  border-bottom-right-radius:100%;
+  border-bottom-left-radius:60%;
+  animation-name:float;
+  animation-duration:5s;
+  animation-iteration-count:infinite;
+  animation-timing-function: ease;
+}
+#cloud1{
+  z-index:-1;
+  position:relative;
+  background:#DFDFDF;
+  width:70px;
+  height:30px;
+  padding:1%;
+  margin-left:-4px;
+  margin-top:3px;
+  border-top-right-radius:40%;
+  border-top-left-radius:70%;
+  border-bottom-right-radius:60%;
+  border-bottom-left-radius:30%;
+}
+#cloud2{
+  position:relative;
+  background:#DEDEDE;
+  width:55px;
+  height:50px;
+  padding:1%;
+  margin-left:5px;
+  margin-top:-23px;
+  border-top-right-radius:100%;
+  border-top-left-radius:100%;
+  border-bottom-right-radius:100%;
+  border-bottom-left-radius:70%;
+}
+@keyframes float{
+  0%{margin-left:-1%;}
+  25%{margin-left:-2.5%;}
+  50%{margin-left:-4%;}
+  75%{margin-left:-2.5%;}
+  100%{margin-left:-1%;}
+}
+#rain{
+  position:relative;
+  z-index:-1;
+  border-left:2px dotted #44F;
+  border-right:2px dotted #44F;
+  height:10px;
+  width:20px;
+  margin-top:45px;
+  transform:rotate(20deg);
+  padding-top:50px;
+  transitionY:5px;
+  animation-name:drip;
+  animation-duration:3s;
+  animation-iteration-count:infinite;
+  animation-timing-function: ease;
+}
+#rain1{
+  border-left:2px dotted #44F;
+  border-right:2px dotted #44F;
+  height:5px;
+  width:20px;
+  margin-top:-55px;
+  margin-left:10px;
+  padding-top:50px;
+  transitionY:5px;
+}
+@keyframes drip{
+  0%{margin-top:75%;}
+  25%{margin-top:70%;}
+  50%{margin-top:75%;}
+  75%{margin-top:70%;}
+  100%{margin-top:75%;}
+}
+
+#bolts{margin-top:-240%;}
+#bolt{
+	transform:rotate(50deg);
+	border-top-right-radius:100%; 
+	position:absolute;
+	}
+#bolt,#bolt1,#bolt2{
+	background:yellow;
+	height:15px;
+	width:10px;
+	padding:2px;
+	animation-name:strike;
+	animation-duration:3s;
+	animation-iteration-count:infinite;
+	animation-timing-function: ease;
+}
+#bolt1,#bolt2{
+  margin-left:7px;
+  margin-top:7px;
+}
+#bolt2{
+  border-bottom-left-radius:100%;
+}
+@keyframes strike{
+  0%{background-color:#FEFE2D;}
+  25%{background-color:#FFFF51;}
+  50%{background-color:#FFFF75;}
+  75%{background-color:#FFFFA1;}
+  100%{background-color:#FFF;}
+}
+
+
+
+
+/* Styles for Larger screens */
+
+@media(min-width:300px){
+	#moon,#sun,#cloud{
+	left:5em;
+}
+	#getWeather,
+	#cityInfo{
+		margin-left:2em;
+		margin-right:2em;
+	}
+}
+
+@media(min-width:400px){
+	#moon,#sun,#cloud{
+	left:7em;
+	}
+	
+}
+
+@media(min-width:500px){
+	#moon,#sun,#cloud{
+	left:9em;
+	}
+	#cloud{
+		top:2em;
+	}
+	
+}
+
+@media (min-width:650px){
+	#moon,#sun,#cloud{
+		left:13em;
+	}
+	#cloud{
+		top:1.5em;
+	}
+}
+
+@media (min-width:700px){
+	#moon,#sun,#cloud{
+		left:7em;
+	}
+	#cloud{
+		top:2.5em;
+	}
+}
