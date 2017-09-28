@@ -1,5 +1,6 @@
 #nutritionApp{
-	max-height:24em;
+	max-height:28em;
+	width:14em;
 	font-size: 1.5em;
 	text-align:center;
 }
@@ -12,13 +13,12 @@
 }
 
 #nutritionApp p{
-	font-size:0.5em;
+	font-size:0.4em;
 }
 #results{
 	font-size:0.70em;
-	display:flex;
-	flex-direction:column;
 	margin-top:0.5em;
+	color:aliceblue;
 }
 
 #area{
@@ -30,13 +30,13 @@
 #firstResult,
 #secondResult,
 #thirdResult{
-	justify-content: space-between;
-	margin-bottom:0.75em;
+	margin:1em 0.25em 0.75em;
 }
 
 #s,#s1,#s2{
-	background:#AAA;
+	padding:0 0.25em;
 	color:#000;
+	background: #CCC;
 }
 
 
@@ -48,5 +48,8 @@
 	#area{
 	font-size:1em;
 	}
-}
+
+	#nutritionApp{
+		max-height:24em;
+	}
 }

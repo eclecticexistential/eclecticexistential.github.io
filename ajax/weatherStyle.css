@@ -12,6 +12,7 @@
 	font-size: 1.5em;
 	padding-top:1em;
 	max-height:24em;
+	width:12em;
 	position:relative;
 	z-index:1;
 	}
@@ -270,7 +271,7 @@
 
 @media(min-width:500px){
 	#moon,#sun,#cloud{
-	left:9em;
+	left:10em;
 	}
 	#cloud{
 		top:2em;
@@ -280,16 +281,16 @@
 
 @media (min-width:650px){
 	#moon,#sun,#cloud{
-		left:13em;
+		left:10em;
 	}
 	#cloud{
-		top:1.5em;
+		top:2em;
 	}
 }
 
 @media (min-width:700px){
 	#moon,#sun,#cloud{
-		left:7em;
+		left:6em;
 	}
 	#cloud{
 		top:2.5em;
