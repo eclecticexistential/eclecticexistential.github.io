@@ -1,10 +1,17 @@
+@import url("http://fonts.googleapis.com/css?family=Lato:100");
 * {margin: 0; padding: 0;}
 #css-zen-garden {
   background: #544; 
-  background: linear-gradient(#569, #600);
+  background: linear-gradient(#456, #564);
 }
-h1{font-size:72px;text-align:center;}
-header {
+h1{font:72px Lora;padding-top:10px;text-shadow:1px 1px 3px #000;}
+h1,h2,h3{text-align:center;color:#EAEAEA;}
+h2{color:#55A;padding-top:10px;text-shadow:1px 1px 3px #AAA;}
+#zen-summary{padding-top:10px; font-size:14px;width:30%; margin-left:36%;}
+h3{font:bold 24px arial; text-shadow:1px 1px 3px #000;padding:10px;}
+p{text-shadow:1px 1px 3px #000;}
+
+#zen-preamble{
   margin: 80px auto;
   perspective: 1000px;
   background: 
@@ -17,67 +24,166 @@ header {
   transform-style: preserve-3d;
   transition: 0.5s;
 }
-header:hover {transform: rotateX(80deg); transform-origin: top;}
+#zen-preamble:hover {transform: rotateX(80deg);}
 
 /*bottom surface */
-header:after {
+#zen-preamble:after {
   /*36px high element positioned at the bottom of the image*/
   content: ''; position: absolute; left: 0; bottom: 0; 
-  width: 100%; height: 36px;
+  width: 100%; height: 200px;
   /*inherit the main BG*/
   background: inherit; background-size: cover;
-  /*draw the BG bottom up*/
-  background-position: bottom;
   /*rotate the surface 90deg on the bottom axis*/
   transform: rotateX(90deg); transform-origin: bottom;
 }
 /*label style*/
-header h2 {
-  color: white; text-transform: uppercase;
-  position: absolute; top: 100%;width: 100%;
-  font: bold 12px/36px Montserrat; text-align: center;
+#zen-preamble>p{
+  color: white; width:70%; line-height:35px;
+  position: absolute;
+  font: bold 16px Montserrat;
   /*the rotation is a bit less than the bottom surface to avoid flickering*/
   transform: rotateX(-89.99deg); transform-origin: top;
   z-index: 1;
 }
-/*shadow*/
-header h2:before {
-  content: ''; position: absolute; top: 0; left: 0;
-  width: 100%; height: 100%;
-  background: rgba(0, 0, 0, 0.5); 
-  box-shadow: 0 0 100px 50px rgba(0, 0, 0, 0.5);
-  transition: all 0.5s; 
-  /*by default the shadow will be almost flat, very transparent, scaled down with a large blur*/
-  opacity: .3;
-  transform: rotateX(95deg) translateZ(-80px) scale(0.75);
-  transform-origin: bottom;
-}
+#zen-preamble p:first-of-type{padding:2% 0 0 17%;}
+#zen-preamble p:nth-of-type(even){padding:6% 0 0 17%;}
+#zen-preamble p:last-child{padding:10% 0 0 17%;}
 
-#zen-participation,#zen-requirements,#zen-preamble{color:white;text-shadow:1px 1px 3px #000;}
-#zen-participation h3,#zen-requirements h3,#zen-preamble h3,#zen-explanation h3,#zen-benefits h3{margin-bottom:10px;}
-#zen-participation,#zen-requirements{margin-left:-4%;margin-right:-4%;}
-#zen-explanation{padding-bottom:3.5%;}
-a{text-decoration: none;color:#AAA;text-shadow:1px 1px 3px #000;font-family:arial;}
-.wrapper{display:flex; flex-direction:row; justify-content:space-around;}
-.wrapper h3, ul{text-align:center;}
-.wrapper ul{color:transparent;}
-p{padding:1em;}
-footer{width:100%;border-bottom:1px solid;border-top:1px solid;padding:10px;}
-#zen-requirements{margin-bottom:4%;}
-#zen-summary{margin-top:3%;}
-#zen-summary,#zen-preamble,#zen-supporting,#zen-participation,#zen-benefits,#zen-requirements{
-	text-align:center; 
-	padding:20px;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	text-align: center; 
-	flex-direction: column;
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-attachment: fixed;
+#zen-explanation{
+  margin: 180px auto;
+  perspective: 1000px;
+  background: 
+    linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), 
+    url("http://placeimg.com/800/600/nature");
+  /*disabling the translucent black bg on the main image*/
+  background-size: 0, cover;
+  background-position: bottom;
+  /*3d space for children*/
+  transform-style: preserve-3d;
+  transition: 0.5s;
 }
-h3,p{
-	font-size: 3vh;
+#zen-explanation:hover {transform: rotateX(80deg);}
+
+/*bottom surface */
+#zen-explanation:after {
+  /*36px high element positioned at the bottom of the image*/
+  content: ''; position: absolute; left: 0; bottom: 0; 
+  width: 100%; height: 200px;
+  /*inherit the main BG*/
+  background: inherit; background-size: cover;
+  /*rotate the surface 90deg on the bottom axis*/
+  transform: rotateX(90deg); transform-origin: bottom;
 }
-#zen-preamble,#zen-participation,#zen-requirements{background-image:url("http://www.celestinevision.com/site/wp-content/uploads/2014/10/bigstock-Stunning-Lavender-Field-Landsc-41183260.jpg")}}
+/*label style*/
+#zen-explanation>p{
+  color: white; width:70%;
+  position: absolute;
+  font: bold 16px Montserrat;
+  /*the rotation is a bit less than the bottom surface to avoid flickering*/
+  transform: rotateX(-89.99deg); transform-origin: top;
+  z-index: 1;
+}
+#zen-explanation p:first-of-type{padding:1% 0 0 17%;}
+#zen-explanation p:last-child{padding:8% 0 0 17%;}
+
+#zen-participation{
+  margin: 80px auto;
+  perspective: 1000px;
+  background: 
+    linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), 
+    url("http://www.dfrow.com/wp-content/uploads/2015/08/dfrow-blog-most-beauitful-gardens-in-the-world-keukenhof.jpg");
+  /*disabling the translucent black bg on the main image*/
+  background-size: 0, cover;
+  background-position: bottom;
+  /*3d space for children*/
+  transform-style: preserve-3d;
+  transition: 0.5s;
+}
+#zen-participation:hover {transform: rotateX(80deg);}
+
+/*bottom surface */
+#zen-participation:after {
+  /*36px high element positioned at the bottom of the image*/
+  content: ''; position: absolute; left: 0; bottom: 0; 
+  width: 100%; height: 200px;
+  /*inherit the main BG*/
+  background: inherit; background-size: cover;
+  /*rotate the surface 90deg on the bottom axis*/
+  transform: rotateX(90deg); transform-origin: bottom;
+}
+/*label style*/
+#zen-participation>p{
+  color: white; width:70%; line-height:35px;
+  position: absolute;
+  font: bold 16px Montserrat;
+  /*the rotation is a bit less than the bottom surface to avoid flickering*/
+  transform: rotateX(-89.99deg); transform-origin: top;
+  z-index: 1;
+}
+#zen-participation p:first-of-type{padding:0.5% 0 0 17%;}
+#zen-participation p:nth-of-type(even){padding:5% 0 0 17%;}
+#zen-participation p:last-child{padding:9% 0 0 17%;}
+
+
+#zen-benefits{
+  margin: 180px auto;
+  perspective: 1000px;
+  background: 
+    linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), 
+    url("http://placeimg.com/800/600/nature");
+  /*disabling the translucent black bg on the main image*/
+  background-size: 0, cover;
+  background-position: bottom;
+  /*3d space for children*/
+  transform-style: preserve-3d;
+  transition: 0.5s;
+}
+#zen-benefits:hover {transform: rotateX(80deg);}
+
+/*bottom surface */
+#zen-benefits:after {
+  /*36px high element positioned at the bottom of the image*/
+  content: ''; position: absolute; left: 0; bottom: 0; 
+  width: 100%; height: 100px;
+  /*inherit the main BG*/
+  background: inherit; background-size: cover;
+  /*rotate the surface 90deg on the bottom axis*/
+  transform: rotateX(90deg); transform-origin: bottom;
+}
+/*label style*/
+#zen-benefits>p{
+  color: white; width:70%; line-height:35px;
+  position: absolute;
+  font: bold 16px Montserrat;
+  /*the rotation is a bit less than the bottom surface to avoid flickering*/
+  transform: rotateX(-89.99deg); transform-origin: top;
+  z-index: 1;
+}
+#zen-benefits p:first-of-type{padding:1.5% 0 0 17%;}
+
+#zen-requirements p{padding-top: 10px; padding-bottom:10px; font:24px Lora; margin-left:10%; margin-right:10%; text-shadow: 1px 1px 3px #FFF;}
+#zen-requirements{padding-top:10px;}
+footer{text-align:center;}
+
+#zen-requirements,#design-selection,#design-archives,#zen-resources{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center; 
+  flex-direction: column;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+#zen-requirements,#design-selection,#zen-resources{
+  background-image: url(
+http://www.rd.com/wp-content/uploads/sites/2/2016/04/01-tips-butterfly-garden-vibrant-flowers.jpg);
+margin-left:-20px;
+margin-right:-20px;
+padding-left: 20px;
+padding-right: 30px;
+}
+.sidebar ul{font:15px arial;padding:20px;}
+.sidebar h3{padding-top:20px;}
+a{text-decoration:none;color:#000;font-weight:bold;}
+li{list-style:none;}

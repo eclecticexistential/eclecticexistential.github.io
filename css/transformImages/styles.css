@@ -1,0 +1,217 @@
+/*inspiration https://line25.com/wp-content/uploads/2015/gifs/1.gif */
+
+*{
+	margin:0;
+	padding:0;
+}
+
+body{
+	font-family:arial;
+}
+
+.main-nav{
+	padding: 1.5em;
+	position: relative;
+	box-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+}
+
+.main-nav h1{
+	padding-left:.5em;
+}
+
+.main-nav h1,
+.main-nav ul,
+.main-nav li{
+	display:inline-block;
+}
+
+.main-nav ul{
+	padding-left:7em;
+	position: absolute;
+	top: 0;
+	left:0;
+	margin: .25em 0 0 11em;
+}
+
+.main-nav li{
+	padding: 1.75em 0 2em 4.5em;
+}
+
+.main-nav img:nth-of-type(1){
+	margin-right: 2em;
+}
+
+.main-nav img{
+	float:right;
+	margin-top: .25em;
+	max-width: 20px;
+	max-height: 20px;
+	padding-left: 0.5em;
+}
+
+.main-page-content{
+	float: left;
+	width: 35%;
+	text-align: center;
+	margin: 2.75em 0 0 3.5em;
+	position: absolute;
+}
+
+.main-page-content h3{
+	font-family: 'Tangerine',arial;
+	font-size: 1.5em;
+	padding-bottom: .5em;
+}
+
+.main-page-content h1{
+	padding-bottom: .5em;
+}
+
+.main-page-content ul{
+	list-style-type:none;
+}
+
+.main-page-content ul a{
+	text-decoration: none;
+}
+
+.main-page-content li{
+	text-decoration: none;
+	padding: 1em;
+	margin:1.5em 0 0 4.5em;
+	width: 60%;
+	border:1px solid grey;
+}
+
+.main-page-images{
+	display: inline-block;
+	background:#000;
+	position: relative;
+	width: 56%;
+	height: 38em;
+	float: right;
+	overflow: hidden;
+	border-left:1px solid black;
+}
+
+.next,
+.main-page-images  img{
+	display: inline-block;
+	margin: -1px;
+	cursor: pointer;
+}
+
+.top-row img{
+	max-height:251px;
+	max-width:251px;
+}
+
+.mini-images img{
+	max-height:300px;
+}
+
+.next,
+.middle{
+	display:inline-block;
+}
+
+.alone img,
+.alone1 img{
+	max-height: 176px;
+}
+
+.next{
+	position: absolute;
+}
+
+.next img{
+	position: relative;
+	max-height:555px;
+}
+
+.bottom{
+	float:right;
+}
+.bottom img{
+	position:relative;
+	z-index:1;
+	display:block;
+	margin-right:18px;
+	max-height:205px;
+	max-width: 205px;
+}
+
+#overlay{
+	text-align:center;
+	width: 47em;
+	height: 38em;
+	padding-top: 3.5em;
+	position: absolute;
+	top:0;
+	z-index:5;
+	background: rgba(0,0,0,1);
+}
+#overlay img{
+	max-width: 500px;
+	max-height: 500px;
+}
+
+#second-main-page{
+	position:relative;
+	width:44%;
+	margin-left:760px;
+	z-index:-1;
+}
+
+#navForImages{
+	position:absolute;
+	background: #DDD;
+	width:100%;
+	display:flex;
+	justify-content:space-around;
+}
+
+.navimages{
+	border-radius: 50%;
+	width:62px;
+	height:62px;
+	padding:10px;
+}
+
+.navButtons{
+	height:40px;
+	width:40px;
+	position:absolute;
+	top:0;
+	right:0;
+	margin:1.5em;
+}
+#toRight{
+	margin-top:4.5em;
+}
+#toExit{
+	margin-top:7.5em;
+}
+
+.here{
+	display:none;
+}
+
+.selected{
+	visibility:visible;
+	position: absolute;
+	top:8em;
+	right:0;
+	text-align:center;
+	padding:2em;
+}
+.selected h2{
+	font-family: 'Yanone Kaffeesatz',arial;
+	font-size:4em;
+	margin-bottom:0.25em;
+}
+.selected h4{
+	font-family:'Tangerine',arial;
+	font-size:2.5em;
+	margin-bottom:1.5em;
+}

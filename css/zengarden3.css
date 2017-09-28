@@ -1,15 +1,11 @@
-body { 
-	margin: 0;
-}
-header{
-	background-image: url(http://placeimg.com/800/600/nature);
-	box-sizing: border-box;
-	height: 50vh; 
-	text-align: center; 
-	padding: 2vw;
-	font-size: 5vw;
-}
-header,.page-wrapper,.sidebar,#zen-summary,#zen-preamble,#zen-explanation,#zen-participation,#zen-benefits,#zen-requirements,#design-selection,#design-archives,#zen-resources{
+body{margin:0; background-color:#444;}
+header{text-align:center; color:olive; font-family:arial; font-size:24px;padding-top:50px;padding-bottom:10%;text-shadow:1px 1px 3px #FFF;}
+
+header h1{font-size:88px;color:#BB4;}
+
+#zen-summary,#zen-explanation,#zen-benefits,footer{text-align:center;color:white;}
+
+header,#zen-preamble,#zen-explanation,#zen-participation,#zen-benefits,#zen-requirements,#design-selection,#design-archives,#zen-resources{
   display: flex;
   align-items: center;
   justify-content: center;
@@ -19,96 +15,31 @@ header,.page-wrapper,.sidebar,#zen-summary,#zen-preamble,#zen-explanation,#zen-p
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
-h1{
-	font-size:8vw;
-	color:#FFF;
-	text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
-}
-h3:first-of-type{
-  text-transform: uppercase;
-  color: #fff;
-  font-size: 6vw;
-  padding:0.5em 2em;
-  text-shadow: 2px 3px 3px rgba(0,0,0,0.4);
-}
-#zen-participation,#zen-requirements,#design-selection {
-  background-image: url(http://placeimg.com/800/600/nature);
-}
-div:nth-child(2n-1) {
-  background-image: url(http://danielslawnandgarden.com/wp-content/uploads/2016/05/perennial-garden.jpg);
-}
-div:nth-of-type(odd) {
-  background-image: url(http://www.rd.com/wp-content/uploads/sites/2/2016/04/01-tips-butterfly-garden-vibrant-flowers.jpg);
-}
-p{
-	color:#FFE;
-	text-shadow:1px 3px 3px rgba(0,0,0,0.5);
-	line-height: 20px;
-	font-size:18px;
-	font-family: arial;
-	padding:20px;
-}
-
-h2{
-font-size:62px;
-}
-
-#zen-summary{
-	padding:1em;
+header, #zen-preamble,#zen-participation,#zen-requirements,#design-selection, #zen-resources{
+	background-image:url("http://www.gishaag.net/wp-content/uploads/IMG_8005.jpg");
 	}
 
-a{
-	color:#7AD;
-	text-decoration: none;
+#zen-summary p,#zen-explanation p,#zen-benefits p{
+  font-size: 24px; text-shadow: 1px 1px 3px #000;
 }
 
-.sidebar a{
-	color:yellow;
+p,footer{
+	padding:1em;	
+}
+h3{
+	padding:0.5em;
 }
 
-.sidebar li {
-	list-style:none;
-	padding:1em;
-}
+a{color:#7AD;
+font-size: 24px;
+text-shadow: 1px 1px 3px #000;
+text-decoration: none;}
 
-.sidebar ul{
-	
-	background-color:rgba(0,0,0,0.5);
-}
+.sidebar ul{color:transparent;}
+.sidebar #zen-resources, .sidebar #design-archives, .sidebar #design-selection{padding-bottom:2%;}
 
-footer{background:#444;}
-
-#design-archives{  
-	background-image:url(http://placeimg.com/800/600/nature);
-}
-
-#design-archives nav{
-	display:flex;
-	flex:1;
-}
-#design-archives nav li:nth-of-type(1){
-	order:1;
-}
-#design-archives li{
-	margin-right:2em;
-}
-
-#design-selection{
-	background-image:url(http://danielslawnandgarden.com/wp-content/uploads/2016/05/perennial-garden.jpg);
-}
-
-.sidebar{
-	display:flex;
-	flex-direction:row;
-	flex:1;
-}
-
-.sidebar ul{
-	font-family:montserrat;
-	font-size:18px;
-	color:white;
-}
-.sidebar #design-archives ul, #zen-resources ul{
-  display: inline-flex;
-  list-style:none;
+h3{color:white;font-size:42px;text-shadow:1px 1px 3px #8BE;}
+#zen-preamble p,#zen-participation p,#zen-requirements p{
+  font-family: montserrat; font-size:32px; padding:0% 10% 0% 10%;
+  text-shadow: 1px 1px 3px #FFF;
 }

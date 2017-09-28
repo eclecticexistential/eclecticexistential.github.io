@@ -1,12 +1,27 @@
 .col{
-	height:40em;
+	height:45em;
 }
 .col img{
 	margin: 1em;
 }
 
+#jQuery{
+	width:175px;
+	height:160px;
+	margin-left: 2em;
+	margin-right: 2em;
+}
+
 @media (min-width:400px){
+	.col{
+	height:36em;
+	}
 	.col img{
-		margin: 4em 1em;
+		margin: 2em;
+	}
+	#jQuery{
+		width:275px;
+		height:200px;
+		margin: 0.5em 8em;
 	}
 }
