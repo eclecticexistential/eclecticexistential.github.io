@@ -1,0 +1,12 @@
+.col{
+	height:40em;
+}
+.col img{
+	margin: 1em;
+}
+
+@media (min-width:400px){
+	.col img{
+		margin: 4em 1em;
+	}
+}

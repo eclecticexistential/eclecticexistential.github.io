@@ -8,6 +8,7 @@
 	<link rel="stylesheet" href="../style.css">
 	<link rel="stylesheet" href="weatherStyle.css">
 	<link rel="stylesheet" href="nutritionStyle.css">
+	<link rel="stylesheet" href="nasaStyle.css">
     <title>Jessica Cottner's Programing Portfolio</title>
   </head>
 
@@ -88,11 +89,21 @@
 			<input type="text" placeholder="Name a Place" id="cityInfo"/>
           <input type="button" id="getWeather" class="btn btn-info" value="Weather Update &raquo;"/>
 		</div>
+	   
+        <div class="col" id="NASAApp">
+          <h3>NASA's APOD</h3>
+		  
+		  <img src="Astronaut.png" alt="Astronaut Selfie"></img>
+          <p>NASA's Astronomy Picture of the Day (APOD) generated with AJAX. Full page features a delightful gif of the stars,
+		  followed by today's astronomy picture. Marvel at the fascinating features of space from the perspective of Earth
+		  or one of our very important satellites.</p>
+         <a id="APOD" class="btn btn-info" href="NASAAPOD.html" role="button">Today's Image &raquo;</a>
+		 
+        </div>
 		
-
+		
 		<div class="col" id="nutritionApp">			
 			<h3>Nutrition App</h3>
-				<input type="text" placeholder="What are you craving?" id="area" />
 					<p>Powered by <a href="http://www.nutritionix.com/business/api">Nutritionix API</a></p>
 					<div id="results">
 						<div id="firstResult">
@@ -111,21 +122,11 @@
 								<div id="c2"></div>
 							</div>
 					</div>
-			<a class="btn btn-warning" id="submit" value="Sumbit" role="button">Get Nutritional Info &raquo;</a>
+					
+				<input type="text" placeholder="What are you craving?" id="area" />
+			<input class="btn btn-warning" id="submit" value="Get Nutritional Info &raquo"/>
 		</div>
-	   
-	   
-	   
-	   
-	   
-	   
-        <div class="col">
-          <h3>API & AJAX</h3>
-          <p>Although AJAX is primarly coded in JS and jQuery, these interesting features deserve an entire page dedicated to them.
-		  Rookie projects include a weather and nutrition app. Newest projects include NASA's APOD.</p>
-		  <img src="" alt=""></img>
-          <a class="btn btn-info" href="#" role="button">Make AJAX Calls &raquo;</a>
-        </div>
+		
       </div>
 	</div>
 	<br>

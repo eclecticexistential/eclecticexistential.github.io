@@ -6,9 +6,9 @@
 
 #nutritionApp h3{
 	text-align:center;
-	color:#040;
-	margin:-0.75em 0 0.5em;
-	text-shadow: 0 0 5px lightblue;
+	color:#AAA;
+	margin:-0.75em 0 -0.25em;
+	text-shadow: 0 0 5px #000;
 }
 
 #nutritionApp p{
@@ -22,7 +22,9 @@
 }
 
 #area{
-	margin:0 1em;
+	margin: 0 1em;
+	font-size:0.75em;
+	border: 1px solid #CDC;
 }
 
 #firstResult,
@@ -33,7 +35,8 @@
 }
 
 #s,#s1,#s2{
-	background:#CCC;
+	background:#AAA;
+	color:#000;
 }
 
 
@@ -42,4 +45,8 @@
 }
 
 @media(min-width:300px){
+	#area{
+	font-size:1em;
+	}
+}
 }
