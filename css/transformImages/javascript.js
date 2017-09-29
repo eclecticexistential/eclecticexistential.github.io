@@ -27,22 +27,24 @@ function fillArray(){
 
 
 fillArray();
-
+//prevent excess bubbling for mozilla//
+$mainImages.on("click",makeVisible,false);
+$mainImages.on("click",imagesMove,false);
 
 //add text block on second page//
 
-function makeVisible(){
-		if(event.target.tagName=="IMG"){
-			indexOf = $.inArray(event.target,$images);
+function makeVisible(e){
+		if(e.target.tagName=="IMG"){
+			indexOf = $.inArray(e.target,$images);
 					putIn2nd(indexOf);
 				}
 			}
 
-// needed for second click through cycle on main page otherwise event.target doesn't match//
-function willItBlend(){
-		if(event.target.tagName=="IMG"){
+// needed for second click through cycle on main page otherwise e.target doesn't match//
+function willItBlend(e){
+		if(e.target.tagName=="IMG"){
 			for(i=0;i<$images.length;i++){
-			if(event.target.id==i){
+			if(e.target.id==i){
 				indexOf=i;
 				putIn2nd(indexOf);
 				}
@@ -51,6 +53,8 @@ function willItBlend(){
 }
 
 
+
+//updates text block according to image//
 function putIn2nd(){
 	if($allOf.hasClass("selected")){
 		$allOf.removeClass("selected");
@@ -65,21 +69,21 @@ function putIn2nd(){
 
 //make the $doc image disappear from navimage array on first click//
 
-function removeNavImage(){
-	if(event.target.tagName=="IMG"){
-			indexOf = $.inArray(event.target,$images);
+function removeNavImage(e){
+	if(e.target.tagName=="IMG"){
+			indexOf = $.inArray(e.target,$images);
 			$($actArrImg[indexOf]).hide();
 	}
 }
 
 $images.on("click",imagesMove).on("click",makeVisible);
 
-function imagesMove(){
+function imagesMove(e){
 	$navForImages.append($actArrImg);
 	//makes it easier to add/remove buttons and images from overlay//
 	$doc.append($navButtons);
-	$doc.append($(this));
-	removeNavImage(event.target);
+	$doc.append(e.target);
+	removeNavImage(e);
 	$mainImages.append($doc);
 	$mainImages.animate({"margin-right":'+=600'},1000,"linear");
 	$doc.children("img").unbind("click");

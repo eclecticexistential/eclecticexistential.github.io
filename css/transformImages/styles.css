@@ -16,7 +16,7 @@ body{
 }
 
 .main-nav h1{
-	padding-left:.5em;
+	padding-left:0.5em;
 }
 
 .main-nav h1,
@@ -30,7 +30,7 @@ body{
 	position: absolute;
 	top: 0;
 	left:0;
-	margin: .25em 0 0 11em;
+	margin: 0.25em 0 0 11em;
 }
 
 .main-nav li{
@@ -43,7 +43,7 @@ body{
 
 .main-nav img{
 	float:right;
-	margin-top: .25em;
+	margin-top: 0.25em;
 	max-width: 20px;
 	max-height: 20px;
 	padding-left: 0.5em;
@@ -60,11 +60,11 @@ body{
 .main-page-content h3{
 	font-family: 'Tangerine',arial;
 	font-size: 1.5em;
-	padding-bottom: .5em;
+	padding-bottom: 0.5em;
 }
 
 .main-page-content h1{
-	padding-bottom: .5em;
+	padding-bottom: 0.5em;
 }
 
 .main-page-content ul{
@@ -185,6 +185,11 @@ body{
 	top:0;
 	right:0;
 	margin:1.5em;
+	border:1px solid grey;
+	border-radius: 5%;
+	background:#249;
+	color:#FFF;
+	cursor: pointer;
 }
 #toRight{
 	margin-top:4.5em;
@@ -214,4 +219,30 @@ body{
 	font-family:'Tangerine',arial;
 	font-size:2.5em;
 	margin-bottom:1.5em;
+}
+
+@media (min-width:700){
+		.main-page-images{
+			height:37em;
+		}
+		.top-row img{
+	max-height:240px;
+	max-width:240px;
+		}
+	#second-main-page{
+	margin-left:700px;
+	}
+	#navForImages{
+	width:106%;
+	margin-left:-18.5px;
+	}
+	.navButtons{
+		margin: 1.5em 3em;
+	}
+	.main-nav ul{
+		padding-left:4.5em;
+	}
+	.main-nav img:nth-of-type(1){
+		margin-right:1.25em;
+	}
 }
