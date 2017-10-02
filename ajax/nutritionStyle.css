@@ -1,5 +1,5 @@
 #nutritionApp{
-	max-height:30em;
+	max-height:28em;
 	width:14em;
 	font-size: 1.5em;
 	text-align:center;
@@ -50,6 +50,5 @@
 	}
 
 	#nutritionApp{
-		max-height:24em;
 	}
 }

@@ -1,24 +1,20 @@
 .col{
 	height:45em;
 	display:flex;
-	justify-content:center;
 }
+
 #jQuery{
 	width:180px;
 	height:160px;
-	margin: 0.25em 1.5em;
+	margin:auto;
 }
 
-@media (min-width:400px){
+@media (min-width:600px){
 	.col{
 	height:36em;
-	}
-	#nature{
-		margin: 2em;
 	}
 	#jQuery{
 		width:275px;
 		height:200px;
-		margin: 0.5em 8em;
 	}
 }
