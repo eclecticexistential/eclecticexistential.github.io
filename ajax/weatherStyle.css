@@ -8,7 +8,7 @@
 #weatherApp{
 	text-align:center;
 	color:#735DB5;
-	text-shadow:1px 1px 3px #000;
+	text-shadow: 0.063em 0.063em 3px #000;
 	font-size: 1.5em;
 	padding-top:1em;
 	max-height:28em;
@@ -29,13 +29,13 @@
 	
 #moon{
 	background-color:white;
-	height:50px;
-	width:50px;
+	height:3.125em;
+	width:3.125em;
 }
 #crater{
 	background: rgba(0,0,0,0.05);
-	height:30px;
-	width:30px;
+	height:1.875em;
+	width:1.875em;
 }
 #moon,#crater,#sun{
   border-radius:50%;
@@ -49,15 +49,15 @@
 
 #sun{
   background-color:yellow;
-  height:50px;
-  width:50px;
+  height:3.125em;
+  width:3.125em;
 }
 
 #ray,#ray1,#ray2,#ray3{
 	position:absolute;
 	background-color:orange;
-	height:50px;
-	width:50px;
+	height:3.125em;
+	width:3.125em;
 	animation-name: shine;
 	animation-iteration-count: infinite;
 	  opacity:.99;
@@ -91,8 +91,8 @@
 #star1,#star2,#star3,#star4,#star5{
 	position:absolute;
 	background-color:white;
-	height:1px;
-	width: 1px;
+	height:0.063em;
+	width: 0.063em;
 	animation-name:sparkle;
 	animation-iteration-count:infinite;
 	animation-timing-function: ease;
@@ -100,11 +100,11 @@
 
 #star1{
 	top:0;
-	left:6px;
+	left:0.375em;
   animation-duration: 5s;
 }
 #star2{
-	top:10px;
+	top:0.625em;
 	right:0;
   animation-duration: 3s;
 }
@@ -114,13 +114,13 @@
   animation-duration: 4s;
 }
 #star4{
-	bottom:5px;
+	bottom:0.313em;
 	right:0;
   animation-duration:2s;
 }
 #star5{
 	top:0;
-	right:4px;
+	right:0.25em;
   animation-duration:1s;
 }
 @keyframes sparkle{
@@ -135,8 +135,8 @@
   top: 2.5em;
   z-index:1;
   background:#DADADA;
-  width:30px;
-  height:20px;
+  width:1.875em;
+  height:1.250em;
   padding:1%;
   border-top-right-radius:50%;
   border-top-left-radius:100%;
@@ -151,10 +151,10 @@
   z-index:-1;
   position:relative;
   background:#DFDFDF;
-  width:70px;
-  height:30px;
+  width:4.375em;
+  height:1.875em;
   padding:1%;
-  margin-left:-4px;
+  margin-left:-0.25em;
   margin-top:3px;
   border-top-right-radius:40%;
   border-top-left-radius:70%;
@@ -164,11 +164,11 @@
 #cloud2{
   position:relative;
   background:#DEDEDE;
-  width:55px;
-  height:50px;
+  width:3.438em;
+  height:3.125em;
   padding:1%;
-  margin-left:5px;
-  margin-top:-23px;
+  margin-left:0.313em;
+  margin-top:-1.438empx;
   border-top-right-radius:100%;
   border-top-left-radius:100%;
   border-bottom-right-radius:100%;
@@ -184,28 +184,28 @@
 #rain{
   position:relative;
   z-index:-1;
-  border-left:2px dotted #44F;
-  border-right:2px dotted #44F;
-  height:10px;
-  width:20px;
-  margin-top:45px;
+  border-left:0.125em dotted #44F;
+  border-right:0.125em dotted #44F;
+  height:0.625em;
+  width:1.250em;
+  margin-top:2.813em;
   transform:rotate(20deg);
-  padding-top:50px;
-  transitionY:5px;
+  padding-top:3.125em;
+  transitionY:0.313em;
   animation-name:drip;
   animation-duration:3s;
   animation-iteration-count:infinite;
   animation-timing-function: ease;
 }
 #rain1{
-  border-left:2px dotted #44F;
-  border-right:2px dotted #44F;
-  height:5px;
-  width:20px;
-  margin-top:-55px;
-  margin-left:10px;
-  padding-top:50px;
-  transitionY:5px;
+  border-left:0.125em dotted #44F;
+  border-right:0.125em dotted #44F;
+  height:0.313em;
+  width:1.250em;
+  margin-top:-3.438em;
+  margin-left:0.625em;
+  padding-top:3.125em;
+  transitionY:0.313em;
 }
 @keyframes drip{
   0%{margin-top:75%;}
@@ -223,17 +223,17 @@
 	}
 #bolt,#bolt1,#bolt2{
 	background:yellow;
-	height:15px;
-	width:10px;
-	padding:2px;
+	height:0.938em;
+	width:0.625em;
+	padding:0.125em;
 	animation-name:strike;
 	animation-duration:3s;
 	animation-iteration-count:infinite;
 	animation-timing-function: ease;
 }
 #bolt1,#bolt2{
-  margin-left:7px;
-  margin-top:7px;
+  margin-left:0.438em;
+  margin-top:0.438em;
 }
 #bolt2{
   border-bottom-left-radius:100%;
@@ -251,7 +251,7 @@
 
 /* Styles for Larger screens */
 
-@media(min-width:300px){
+@media(min-width:18.75em){
 	#moon,#sun,#cloud{
 	left:5em;
 }
@@ -262,14 +262,14 @@
 	}
 }
 
-@media(min-width:400px){
+@media(min-width:25em){
 	#moon,#sun,#cloud{
 	left:7em;
 	}
 	
 }
 
-@media(min-width:500px){
+@media(min-width:31.250em){
 	#moon,#sun,#cloud{
 	left:10em;
 	}
@@ -279,7 +279,7 @@
 	
 }
 
-@media (min-width:650px){
+@media (min-width:40.625em){
 	#moon,#sun,#cloud{
 		left:10em;
 	}
@@ -288,7 +288,7 @@
 	}
 }
 
-@media (min-width:700px){
+@media (min-width:43.750em){
 	#moon,#sun,#cloud{
 		left:6em;
 	}

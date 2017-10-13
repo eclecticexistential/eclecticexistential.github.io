@@ -5,8 +5,8 @@
 
 
 #NASAApp img{
-	width:215px;
-	height:170px;
+	width:13.438em;
+	height:10.625em;
 	margin:auto;
 }
 
@@ -14,11 +14,11 @@
 	cursor: pointer;
 }
 
-@media (min-width: 500px){
+@media (min-width: 31.250em){
 	#NASAApp{
 	}
 	#NASAApp img{
-	width:300px;
-	height:200px;
+	width:18.750em;
+	height:12.5em;
 	}
 }

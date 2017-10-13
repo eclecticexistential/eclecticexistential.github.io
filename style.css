@@ -5,9 +5,7 @@
 
 body{
 	font-family: arial;
-	background-image: url("img/pexels-photo-249798.png");
-	background-size:cover;
-	background-repeat:no-repeat;
+	background:#999;
 }
 
 /* Nav Bar */
@@ -172,7 +170,7 @@ overlay,
 }
 
 
-@media (min-width: 654px){
+@media (min-width: 40.875em){
 	.col .btn{
 		margin: auto 1.5em 1.75em;
 	}

@@ -4,8 +4,8 @@
 }
 
 #jQuery{
-	width:180px;
-	height:160px;
+	width:11.250em;
+	height:10em;
 	margin:auto;
 }
 
@@ -13,8 +13,11 @@
 	.col{
 	height:36em;
 	}
+	.col img:nth-of-type(1){
+		margin: 2.5em;
+	}
 	#jQuery{
-		width:275px;
-		height:200px;
+		width:17.188em;
+		height:12.5em;
 	}
 }

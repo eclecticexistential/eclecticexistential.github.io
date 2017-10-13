@@ -221,7 +221,7 @@ body{
 	margin-bottom:1.5em;
 }
 
-@media (min-width:700){
+@media (min-width:43.750em){
 		.main-page-images{
 			height:37em;
 		}

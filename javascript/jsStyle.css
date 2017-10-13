@@ -29,7 +29,7 @@
 	margin-top:0.3em;
 }
 .box_o_color{
-	border: 1px solid grey;
+	border: 0.063em solid grey;
 }
 .top .box_o_color{
 	padding:0.3em;
@@ -94,11 +94,11 @@
 	border-color:yellow;
 }
 #pa{
-	border:2px solid #000;
+	border:0.125em solid #000;
 	background:purple;
 	color: #FFF;
-	padding: 10px 15px;
-	font: 18px arial;
+	padding: 0.625em 0.938em;
+	font: 1.125em arial;
 }
 #dealer,
 #player{
@@ -110,7 +110,7 @@
 
 /*Styles for Larger Screens*/
 
-@media (min-width:720px) {
+@media (min-width:45em) {
 
 /*BMI styles*/
 	#BMI,
@@ -133,15 +133,15 @@
 	
 	.bottom .box_o_color{
 		display:inline-block;
-		min-height:95px;
-		min-width:95px;
+		min-height:5.938em;
+		min-width:5.938em;
 	}
 	.bottom .box_o_color label{
 		margin: 2.2em 1.25em;
 	}
 /*Play 21 Styles*/
 	.container:nth-of-type(3){
-		border-top:1px solid #FFF;
+		border-top:0.063em solid #FFF;
 	}
 	#buttons .button{
 		width:25%;
@@ -156,7 +156,7 @@
 	}
 	#reset{
 		margin: 3em 0;
-		min-height:50px;
+		min-height:3.125em;
 	}
 	#dealer,
 	#player,
