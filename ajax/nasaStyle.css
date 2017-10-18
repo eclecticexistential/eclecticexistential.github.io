@@ -16,9 +16,21 @@
 
 @media (min-width: 31.250em){
 	#NASAApp{
+		min-width:50%;
+		background: #222;
 	}
 	#NASAApp img{
-	width:18.750em;
-	height:12.5em;
+	width:40em;
+	height:25em;
+	}
+	
+	#NASAApp p {
+		margin-left: 5em;
+		margin-right: 5em;
+	}
+	
+	#NASAApp a {
+		margin-left:18em;
+		margin-right:18em;
 	}
 }

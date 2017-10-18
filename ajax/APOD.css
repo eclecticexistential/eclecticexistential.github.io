@@ -61,21 +61,24 @@
 	height: 100%;
 }
 
-.data{
-	visibility: hidden;
+
+#apod_explaination{
+	margin: 0.5em;
+	line-height:1.5em;
+	font-size:1.15em;
 }
 
 #main-footer{
-	padding: 3%;
-	visibility: hidden;
+	padding: 3em;
 	text-align: center;
 	background:#249;
 	color:white;
+	margin-top:auto;
 }
 
 nav {
 	background: #AAA;
-	margin-bottom:1em;
+	margin:2em 0 1em;
 	padding-bottom:0.8em;
 }
 
@@ -98,6 +101,7 @@ nav li{
 
 nav ul a{
 	color: #000;
+	text-decoration:none;
 }
 
 nav ul a:hover{

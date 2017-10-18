@@ -1,11 +1,4 @@
-var a = document.getElementById("main-footer");
 
-function testScroll(ev){
-    if(window.pageYOffset>40){
-		a.style.visibility="visible";
-	};
-}
-window.onscroll=testScroll
 
 var url = "https://api.nasa.gov/planetary/apod?api_key=UB0smoKvw5r3io2IQ61TEikHiSWxwofDKvAXHiK5";
 

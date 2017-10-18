@@ -5,13 +5,13 @@
 
 body{
 	font-family: arial;
-	background:#999;
+	background:dodgerblue;
 }
 
 /* Nav Bar */
 
 nav {
-	background: #AAA;
+	background: #777;
 }
 
 nav ul{
@@ -38,7 +38,6 @@ nav ul a{
 nav ul a:hover{
 	text-decoration:none;
 	color:#FFF;
-	border-top:1px solid #000;
 }
 
 nav ul li:hover{
@@ -59,10 +58,7 @@ footer{
 	font-family: 'Quicksand', arial;
     }
 	
-overlay,
-.social-media{
-	border-top:1px solid #BBB;
-}
+
 
 .jumbotron{
 	position: relative;
@@ -94,13 +90,13 @@ overlay,
 	text-align: center;
 	padding-top:5em;
     background-color:rgba(0, 0, 0, 0.2);
+	border-top:0.005em solid #666;
 }
 
 /*Lower Images*/
 
 .col img {
 	margin: 1.25em 0;
-	border: 1px solid red;
 }
 
 /* Button Styles */
@@ -129,22 +125,18 @@ overlay,
 /*social media*/
 .social-media {
 	text-align:center;
+	padding: 1em;
 	width:100%;
-	margin: 2.5em 0 0;
-	padding: 0.5em 0 .25em;
+	height: 6em;
+	background: #777;
+	margin-top:3em;
+	box-shadow: -0.05px 0px 4px 0.75px rgba(0,0,0,0.5);
+	color:#FFF;
 }
 .social-media img {
-	margin: 1em 0.5em;
 	width: 25px;
 	height:25px;
-}
-
-.social-media{
-	background: #ddd;
-}
-
-.row{
-	background: #eee;
+	margin: 0.25em 0.5em 0.75em;
 }
 
 
@@ -156,6 +148,7 @@ overlay,
 	display: flex;
 	flex-direction: column;
 	height: 30em;
+	box-shadow: -1px 0px 4px 1px rgba(0,0,0,0.5);
 }
 .col h3{
 	padding-bottom: 0.5em;
@@ -166,8 +159,14 @@ overlay,
 	color: white;
 }
 
-.col a :hover{
+.col:nth-of-type(2){
+	background:aliceblue;
 }
+
+.col:nth-of-type(2) img{
+	border: 1px solid black;
+}
+
 
 
 @media (min-width: 40.875em){

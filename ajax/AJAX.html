@@ -37,8 +37,9 @@
     <div class="container">
       <!-- Example row of columns -->
       <div class="row">
-        <div class="col" id="weatherApp">
+        <div class="col col-xs-2" id="weatherApp">
           <h3>Weather App</h3>
+		  <input type="text" placeholder="Name a Place" id="cityInfo"/>
 			<h1 id="city"></h1>
 		<div id="join">
 			<div id="all">
@@ -86,25 +87,14 @@
 			<p id='hU'></p>
 			<p id='til'></p>
 			</div>
-			<input type="text" placeholder="Name a Place" id="cityInfo"/>
+			
           <input type="button" id="getWeather" class="btn btn-info" value="Weather Update &raquo;"/>
 		</div>
-	   
-        <div class="col" id="NASAApp">
-          <h3>NASA's APOD</h3>
-		  
-		  <img src="Astronaut.png" alt="Astronaut Selfie"></img>
-          <p>NASA's Astronomy Picture of the Day (APOD) generated with AJAX. Full page features a delightful gif of the stars,
-		  followed by today's astronomy picture. Marvel at the fascinating features of space from the perspective of Earth
-		  or one of our satellites.</p>
-         <a id="APOD" class="btn btn-info" href="NASAAPOD.html" role="button">Today's Image &raquo;</a>
-		 
-        </div>
 		
-		
-		<div class="col" id="nutritionApp">			
+		<div class="col col-xs-2" id="nutritionApp">			
 			<h3>Nutrition App</h3>
 					<p>Powered by <a href="http://www.nutritionix.com/business/api">Nutritionix API</a></p>
+					<input type="text" placeholder="What are you craving?" id="area" />
 					<div id="results">
 						<div id="firstResult">
 							<div id="s"></div>
@@ -123,15 +113,25 @@
 							</div>
 					</div>
 					<br>
-				<input type="text" placeholder="What are you craving?" id="area" />
+				
 			<input class="btn btn-warning" id="submit" value="Get Nutritional Info &raquo"/>
 		</div>
 		
+		 <div class="col" id="NASAApp">
+          <h3>NASA's APOD</h3>
+		  
+		  <img src="Astronaut.png" alt="Astronaut Selfie"></img>
+          <p>NASA's Astronomy Picture of the Day (APOD) generated with AJAX. Full page features a delightful gif of the stars,
+		  followed by today's astronomy picture. Marvel at the fascinating features of space from the perspective of Earth
+		  or one of our satellites.</p>
+         <a id="APOD" class="btn btn-info" href="NASAAPOD.html" role="button">Today's Image &raquo;</a>
+		 
+        </div>
+		
+		
       </div>
 	</div>
-	<br>
-      <hr>
-	<div class="social-media">
+	   <footer class="social-media">
 	  <a href="https://www.facebook.com/search/top/?q=observe%20champion" ><img src="../img/facebook-icon.png" alt="Facebook Icon"></a>
 	  <a href="https://codepen.io/EclecticExistential/" ><img src="../img/codepen-icon.png" alt="Codepen Icon"></a>
 	  <a href="https://github.com/eclecticexistential" ><img src="../img/github-icon.png" alt="Github Icon"></a>

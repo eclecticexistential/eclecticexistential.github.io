@@ -3,13 +3,13 @@
 	width:14em;
 	font-size: 1.5em;
 	text-align:center;
+	background: #343;
 }
 
 #nutritionApp h3{
 	text-align:center;
-	color:#AAA;
-	margin:-0.75em 0 -0.25em;
-	text-shadow: 0 0 0.313em #000;
+	color: #CCC;
+	margin:-0.8em 0 -0.25em;
 }
 
 #nutritionApp p{
@@ -17,12 +17,12 @@
 }
 #results{
 	font-size:0.70em;
-	margin-top:0.5em;
+	margin-top:1.5em;
 	color:aliceblue;
 }
 
 #area{
-	margin: 0 1em;
+	margin: 0 1.5em;
 	font-size:0.75em;
 	border: 1px solid #CDC;
 }
@@ -30,7 +30,7 @@
 #firstResult,
 #secondResult,
 #thirdResult{
-	margin:1em 0.25em 0.75em;
+	margin:1.5em 0.25em;
 }
 
 #s,#s1,#s2{
