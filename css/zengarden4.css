@@ -1,97 +1,32 @@
-@import url("http://fonts.googleapis.com/css?family=Lato:100");
-body{font: 35px Lato;
-color: white;
-text-shadow: 1px 1px 3px #000;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-image:url(http://placeimg.com/800/600/animals);
-  }
-
-h1 {
-    font: 72px arial;
-    width: 44%;
-    margin-left: 54%;
-    margin-top: 5px;
-    color: #3D6029;
-    background-color: rgba(255,255,255,0.5);
-    border-radius: 10px;
-    padding-left: 25px;
-    box-shadow:1px 1px 3px #000;
+/*Now the styles*/
+* {
+  margin: 0; 
+  padding: 0;
+}
+body {
+  background: #38218D; 
+  font-family: arial, verdana, tahoma;
 }
 
+header{color:#E3AD46;box-shadow:1px 1px 3px #000;border-radius:15px; animation: shine 5s;}
 @keyframes shine{
-  0%{color:#597A45; font-size:32px;}
-  50%{color:#789A63; font-size:42px;}
-  100%{color:#A1BD90; font-size:52px;}
+  0%{border-radius:none;}
+  25%{margin:0;}
+  50%{color:#38218D;}
+  75%{text-shadow:1px 1px 4px #FFF;}
+  100%{border-radius:15px;}
 }
-
-h2{
-margin-top: 10%;
-font: montserrat;
-padding: 10px;
-width: 43%;
-background-color: rgba(0,0,0,0.5);
-  animation: shine 40s;
-  animation-fill-mode: forwards;
-}
-
-#zen-summary{
-  background-color: rgba(0,100,0,0.5);
-  padding: 15px;
-  margin-left:-10px;
-  margin-right:-10px;
-}
-#zen-preamble h3{
-  text-align: center;
-}
-
-#zen-preamble p{
-	text-align: center;
-	width: 50%;
-	margin-left: 25%;
-	color: #006400;
-}
-#zen-preamble{
-padding:10px;
-color: #006400;
-margin-left: -10px;
-margin-right: -10px;
-  background-color: white;
-}
-
-p{ 
-  font: 32px arial;
-  color: white;
-  padding: 15px;
-}
-#zen-explanation,#zen-participation,#zen-benefits,#zen-requirements,#design-selection,#design-archives,#zen-resources{
-  display: flex;
+h1{font-size:64px;text-shadow:1px 1px 4px #747;}
+h2{text-align:right;color:#865800;}
+#zen-summary{width:25%;margin:3%;padding:1%;}
+header,#zen-preamble,#zen-explanation,#zen-participation,#zen-benefits,#zen-requirements{box-shadow:1px 1px 3px #000;margin: 5% 20%; padding:2%;
   align-items: center;
-  justify-content: center;
-  text-align: center; 
   flex-direction: column;
   background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-}
-
-#zen-explanation,#zen-benefits,#design-selection,#zen-resources{
-  background-image: url(
-http://www.rd.com/wp-content/uploads/sites/2/2016/04/01-tips-butterfly-garden-vibrant-flowers.jpg);
-margin-left:-20px;
-margin-right:-20px;
-padding-left: 20px;
-padding-right: 30px;
-}
-footer{text-align:center;}
-a{text-decoration: none;
-color:#249;
-font: 30px arial;
-text-shadow: 1px 1px 3px #FFF;}
-li{
-	list-style:none;
-}
-h3{
-	padding:0.5em;
-}
+  background-attachment: fixed;}
+h3{padding-bottom:10px;color:#E3AD46;text-shadow:1px 1px 4px #747;}
+  header,#zen-preamble,#zen-explanation,#zen-participation,#zen-benefits,#zen-requirements{background-image:url("https://www.iwantthatcourse.com.au/sites/default/files/blog-images/hyams-beach-whitest-sand_0.png")}
+  footer{text-align:center;}
+  #zen-preamble,#zen-explanation,#zen-participation,#zen-benefits,#zen-requirements{margin:5% 5% 5% 35%;}
+  .sidebar{margin-top:-115%;width:20%;margin-left:4.3%;padding:2% 1% 2% 3%;}
+  #zen-summary,.sidebar{background-color:rgba(255,255,255,0.5);}

@@ -1,13 +1,14 @@
 #NASAApp{
-	height:42em;
+	height:40em;
 	text-align:center;
+	margin-top: 2em;
 }
 
 
 #NASAApp img{
-	width:13.438em;
+	width:14em;
 	height:10.625em;
-	margin:auto;
+	margin:1em auto 2em;
 }
 
 #APOD{
@@ -16,17 +17,16 @@
 
 @media (min-width: 31.250em){
 	#NASAApp{
-		min-width:50%;
+		height:45em;
 		background: #222;
 	}
 	#NASAApp img{
-	width:40em;
+	width:60em;
 	height:25em;
 	}
 	
 	#NASAApp p {
-		margin-left: 5em;
-		margin-right: 5em;
+		margin: 0 5em;
 	}
 	
 	#NASAApp a {

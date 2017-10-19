@@ -6,7 +6,7 @@ var zenArray=["zengarden.css"];
 
 function fillArray(){
 	var counter = 1;
-	while(counter<9){
+	while(counter<5){
 		zenArray.push("zengarden"+counter+".css");
 		counter++
 	}

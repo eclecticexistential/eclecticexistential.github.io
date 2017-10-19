@@ -1,90 +1,101 @@
-
 body{
-  background-image: url("http://cdn.home-designing.com/wp-content/uploads/2014/02/3-Zen-garden.jpeg");
-  background-size:cover;
-  background-repeat:no-repeat;
+	background: url("http://i.huffpost.com/gadgets/slideshows/332838/slide_332838_3311261_free.jpg") no-repeat fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	text-align:center;
 }
-a{
-  text-decoration: none;
-  color: yellow;
+body p{
+  font-family: 'montserrat', arial;
 }
-#zen-intro{
-	background:rgba(0,0,0,0.5);
-	color:#FFF;
-	position:relative;
+
+a{ 
+text-decoration: none;
+color: dodgerblue;
+font-family: 'montserrat', arial;
 }
-h1{
-  background: url(https://i.ytimg.com/vi/BgjmhbkPVAI/maxresdefault.jpg);
-  background-size: cover;
-  color: #159;
+
+#zen-intro h1{
   font-size: 72px;
-  border-radius: 100%;
-  height: 220px;
-  width: 220px;
-  text-align: center;
-  padding: 130px;
-  margin:20px;
-  box-shadow: 1px 1px 8px #000;
-  text-shadow: 1px 1px 5px #FFF;
-  display: inline-block; 
-}
-h2,
-#zen-summary,
-#zen-preamble{
-	float:right;
-	position:absolute;
-	top:0;
-	right:0;
-	padding:2em;
+  margin: 0px;
+  box-shadow: 1px 1px 5px #000;
+  text-shadow: 2px 2px 3px #FFF;
 }
 
-#zen-summary,
-#zen-preamble{
-	margin-top:6em;
-	text-align: right;
-	width: 50%;
+#zen-intro h2{
+	margin-top:1em;
 }
 
-#zen-preamble{
-	margin-top: 15em;
-}
-
-#zen-supporting{	
-	clear:both;
-	float:right;
-	font-family: 'montserrat';
-	width: 75%;
-	color: #DDD;
-}
-#zen-explanation, #zen-participation, #zen-benefits, #zen-requirements, footer{
-  padding: 1.75em;
-  background-color: rgba(0,0,0,0.5);
-}
-#zen-supporting p{
-  line-height: 25px;
-}
-#zen-participation, #zen-requirements, footer{
-  text-align: right;
-  color: white;
-}
-.sidebar{
-	clear:both;
-	font-family:arial;
+#zen-intro h2, h3{
 	color:#FFF;
-	font-weight:bold;
-	text-align: center;
-	float:left;
-	padding:1.75em 1em;
-	position:absolute;
+	padding:1em;
+	font-size:1.75em;
+	background: #222;
 }
-.sidebar h3{
-	color:#DDD;
+
+#zen-summary, #zen-preamble p, #zen-explanation p, #zen-participation p, #zen-benefits p, #zen-requirements p{
+	color:#FFF;
+	padding:1em;
+	background-color: rgba(0,0,0,0.3);
+}
+
+#design-selection,#design-archives,#zen-resources{
+	list-style:none;
+	color: #FFF;
+	background-color: rgba(0,0,0,0.3);
+}
+
+
+footer{
+	position:absolute;
+	text-align:center;
+	background:#FFF;
+	margin-top:100vh;
+	padding:1em 2.75em;
+}
+	
+@media (min-width:43.750em){
+#zen-intro h2{
+  margin-top: 11%;
+}
+#zen-intro h2, #zen-summary{
+  display: inline-block;
+  width: 40%;
+  margin-right: -20%;
+  margin-left: 13%; 
+  border-radius: 5px;
+}
+#zen-preamble{
+	margin-top: 8.5%;
+	border-radius: 5px;
+	display: inline-block;
+	float: right;
+	width: 40%;
+	margin-right: 13%;
+}
+#zen-intro h2, #zen-summary, #zen-preamble,#zen-supporting,.sidebar{
+	background-color: rgba(0,0,0,0.3);
+}
+#zen-supporting{
+	display: inline-block;
+	margin-top: 5%;
+	width: 50%;
+	border-radius: 5px;
+	padding: 15px;
+}
+
+.sidebar{
+  display: inline-block;
+  padding: 15px;
+  border-radius: 5px;
+  float: right;
+  margin-top: 5%;
 }
 .sidebar li {
-	list-style:none;
+	list-style: none;
 }
 footer{
-	float:left;
 	text-align:center;
-	margin-left:14em;
+}
 }
