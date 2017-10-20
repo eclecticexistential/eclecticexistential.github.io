@@ -48,11 +48,7 @@ font-family: 'montserrat', arial;
 
 
 footer{
-	position:absolute;
-	text-align:center;
-	background:#FFF;
-	margin-top:100vh;
-	padding:1em 2.75em;
+	display:none;
 }
 	
 @media (min-width:43.750em){
@@ -60,42 +56,40 @@ footer{
   margin-top: 11%;
 }
 #zen-intro h2, #zen-summary{
-  display: inline-block;
-  width: 40%;
-  margin-right: -20%;
+  float:left;
   margin-left: 13%; 
-  border-radius: 5px;
 }
+
+#zen-intro h2{
+	width:40%;
+}
+
+#zen-summary{
+	width:41.75%;
+}
+
 #zen-preamble{
-	margin-top: 8.5%;
+	margin: 8.5% 13%;
 	border-radius: 5px;
-	display: inline-block;
 	float: right;
 	width: 40%;
-	margin-right: 13%;
 }
-#zen-intro h2, #zen-summary, #zen-preamble,#zen-supporting,.sidebar{
-	background-color: rgba(0,0,0,0.3);
-}
-#zen-supporting{
-	display: inline-block;
-	margin-top: 5%;
+
+#zen-explanation,#zen-benefits, .sidebar{
+	clear:both;
+	margin-left: 13%;
 	width: 50%;
-	border-radius: 5px;
 	padding: 15px;
 }
 
-.sidebar{
-  display: inline-block;
-  padding: 15px;
-  border-radius: 5px;
-  float: right;
-  margin-top: 5%;
+#zen-participation, #zen-requirements{
+	float:right;
+	width:50%;
+	margin: 8.5% 13%;
 }
+
+
 .sidebar li {
 	list-style: none;
-}
-footer{
-	text-align:center;
 }
 }
