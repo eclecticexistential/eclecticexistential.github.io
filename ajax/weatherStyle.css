@@ -10,19 +10,23 @@
 	font-size: 1.5em;
 	padding-top:1em;
 	max-height:28em;
-	width:12em;
 	position:relative;
 	z-index:1;
 	}
 	
 #output{
-	margin-top: 6em;
+	margin-top: 10em;
 	}
 
+
+#join{
+}
 	
 #all{
 	position:relative;
 	visibility:hidden;
+	width:100%;
+	padding-left:40%;
 	}
 	
 #moon{
@@ -42,7 +46,6 @@
 #moon,#sun,#cloud{
 	position:absolute;
 	top:2em;
-	left:3.5em;
 }
 
 #sun{
@@ -251,37 +254,27 @@
 
 @media(min-width:18.75em){
 	#moon,#sun,#cloud{
-	left:5em;
 }
 	#getWeather,
 	#cityInfo{
-		margin-left:3em;
-		margin-right:3em;
-	}
-	
-	#city{
-		margin-top:2em;
-	}
-	
-	#cityInfo{
-		margin-top:0.75em;
+		margin-left:2em;
+		margin-right:2em;
 	}
 	#join{
-		margin-left:4em;
 		margin-bottom:1em;
+		margin-left:2em;
+		margin-right:2em;
 	}
 }
 
 @media(min-width:25em){
 	#moon,#sun,#cloud{
-	left:7em;
 	}
 	
 }
 
 @media(min-width:31.250em){
 	#moon,#sun,#cloud{
-	left:10em;
 	}
 	#cloud{
 		top:2em;
@@ -289,18 +282,8 @@
 	
 }
 
-@media (min-width:40.625em){
-	#moon,#sun,#cloud{
-		left:10em;
-	}
-	#cloud{
-		top:2em;
-	}
-}
-
 @media (min-width:43.750em){
 	#moon,#sun,#cloud{
-		left:6em;
 	}
 	#cloud{
 		top:2.5em;

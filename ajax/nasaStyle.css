@@ -5,8 +5,6 @@
 
 
 #NASAApp img{
-	width:14em;
-	height:10.625em;
 	margin:1em auto 2em;
 }
 
@@ -21,17 +19,65 @@
 		background: #222;
 	}
 	#NASAApp img{
-	width:65em;
-	height:30em;
 	margin:0.5em auto 1em;
 	}
 	
-	#NASAApp p {
-		margin: 0 10em;
-	}
 	
 	#NASAApp a {
+	}
+}
+
+@media (min-width: 46em){
+	
+	#NASAApp p {
+		padding-left:3em;
+		padding-right:3em;
+	}
+	
+}
+
+@media (min-width: 52em){
+	
+	#NASAApp p {
+		padding-left:5em;
+		padding-right:5em;
+	}
+	
+	#APOD{
+		margin-left:10em;
+		margin-right:10em;
+	}
+}
+
+@media (min-width: 56em){
+	
+	#NASAApp p {
+		padding-left:8em;
+		padding-right:8em;
+	}
+	
+	#APOD{
+		margin-left:15em;
+		margin-right:15em;
+	}
+}
+
+@media (min-width: 65em){
+	
+	#NASAApp p {
+		padding-left:12em;
+		padding-right:12em;
+	}
+	#APOD{
 		margin-left:18em;
 		margin-right:18em;
+	}
+}
+
+@media (min-width: 75em){
+	
+	#APOD{
+		margin-left:22em;
+		margin-right:22em;
 	}
 }
