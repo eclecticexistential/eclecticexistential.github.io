@@ -58,9 +58,16 @@ header h2:before {
 #zen-participation,#zen-requirements{margin-left:-4%;margin-right:-4%;}
 #zen-explanation{padding-bottom:3.5%;}
 a{text-decoration: none;color:#AAA;text-shadow:1px 1px 3px #000;font-family:arial;}
-.wrapper{display:flex; flex-direction:row; justify-content:space-around;}
-.wrapper h3, ul{text-align:center;}
-.wrapper ul{color:transparent;}
+
+.sidebar{text-align:center;}
+.sidebar h3{padding:1.5em 0;}
+.sidebar h3:nth-of-type(1){margin-top:-0.5em; padding-bottom: 1em;}
+
+@media (min-width:38em){
+.wrapper {display:flex; flex-direction:row; justify-content:space-around;}
+.wrapper .sidebar h3, ul{text-align:center;}
+.wrapper .sidebar ul{color:transparent;}
+}
 p{padding:1em;}
 footer{width:100%;border-bottom:1px solid;border-top:1px solid;padding:10px;}
 #zen-requirements{margin-bottom:4%;}
@@ -77,7 +84,11 @@ footer{width:100%;border-bottom:1px solid;border-top:1px solid;padding:10px;}
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 }
-h3,p{
+h3{
+	font-size:2em;
+}
+
+p{
 	font-size: 3vh;
 }
-#zen-preamble,#zen-participation,#zen-requirements{background-image:url("http://www.celestinevision.com/site/wp-content/uploads/2014/10/bigstock-Stunning-Lavender-Field-Landsc-41183260.jpg")}}
+li{list-style:none;}

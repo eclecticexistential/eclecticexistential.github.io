@@ -1,75 +1,57 @@
 
-body{font: 35px Lato;
-color: white;
-text-shadow: 1px 1px 3px #000;
+body{
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-image:url(http://placeimg.com/800/600/animals);
+  text-align:center;
+  color:white;
+  font-family:arial;
   }
 
 h1 {
-    font: 72px arial;
-    width: 44%;
-    margin-left: 54%;
+    font-size: 4em;
     margin-top: 5px;
     color: #3D6029;
     background-color: rgba(255,255,255,0.5);
     border-radius: 10px;
-    padding-left: 25px;
     box-shadow:1px 1px 3px #000;
-}
-
-@keyframes shine{
-  0%{color:#597A45; font-size:32px;}
-  50%{color:#789A63; font-size:42px;}
-  100%{color:#A1BD90; font-size:52px;}
 }
 
 h2{
 margin-top: 10%;
 font: montserrat;
 padding: 10px;
-width: 43%;
 background-color: rgba(0,0,0,0.5);
-  animation: shine 40s;
-  animation-fill-mode: forwards;
+}
+
+h3{
+	font-size:2em;
+	padding:0.5em;
+  text-shadow:1px 1px 1px rgba(0,0,0,0.5);
+}
+
+p{
+	font-weight:bold;
+	padding:0.75em;
+  text-shadow:1px 1px 1px rgba(0,0,0,0.5);
 }
 
 #zen-summary{
   background-color: rgba(0,100,0,0.5);
   padding: 15px;
-  margin-left:-10px;
-  margin-right:-10px;
-}
-#zen-preamble h3{
-  text-align: center;
+  clear:both;
 }
 
-#zen-preamble p{
-	text-align: center;
-	width: 50%;
-	margin-left: 25%;
-	color: #006400;
-}
 #zen-preamble{
-padding:10px;
-color: #006400;
-margin-left: -10px;
-margin-right: -10px;
+	color: #006400;
   background-color: white;
 }
 
-p{ 
-  font: 32px arial;
-  color: white;
-  padding: 15px;
-}
 #zen-explanation,#zen-participation,#zen-benefits,#zen-requirements,#design-selection,#design-archives,#zen-resources{
   display: flex;
   align-items: center;
   justify-content: center;
-  text-align: center; 
   flex-direction: column;
   background-size: cover;
   background-repeat: no-repeat;
@@ -78,20 +60,45 @@ p{
 
 #zen-explanation,#zen-benefits,#design-selection,#zen-resources{
   background-image: url(
-http://www.rd.com/wp-content/uploads/sites/2/2016/04/01-tips-butterfly-garden-vibrant-flowers.jpg);
-margin-left:-20px;
-margin-right:-20px;
-padding-left: 20px;
-padding-right: 30px;
+		http://www.rd.com/wp-content/uploads/sites/2/2016/04/01-tips-butterfly-garden-vibrant-flowers.jpg);
+
 }
-footer{text-align:center;}
+
+#design-selection, #design-archives, #zen-resources{
+	padding-bottom:1em;
+}
+
 a{text-decoration: none;
 color:#249;
-font: 30px arial;
 text-shadow: 1px 1px 3px #FFF;}
+
 li{
 	list-style:none;
 }
-h3{
-	padding:0.5em;
+
+
+@media (min-width: 38em) {
+	
+	@keyframes shine{
+  0%{color:#597A45; font-size:32px;}
+  50%{color:#789A63; font-size:42px;}
+  100%{color:#A1BD90; font-size:52px;}
+}
+
+	
+	h1{
+		float:right;
+		width:44%;
+	}
+	h2{
+		clear:right;
+		float:left;
+		width:43%;
+  animation: shine 40s;
+  animation-fill-mode: forwards;
+	}
+	#zen-preamble p{
+	width: 50%;
+	margin-left: 25%;
+	}
 }
