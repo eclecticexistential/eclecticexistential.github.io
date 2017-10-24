@@ -8,6 +8,7 @@ $.ajax({
         $('#copyright').html('Loading...').css('font-size','2em');
     },
   success: function(result){
+	  $("#copyright").css('font-size','0.75em');
   if("copyright" in result) {
     $("#copyright").text("Image Credits: " + result.copyright);
   }
