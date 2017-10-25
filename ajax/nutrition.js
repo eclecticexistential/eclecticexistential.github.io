@@ -1,7 +1,11 @@
 var x=document.getElementById("submit");
+var y=document.getElementById('area');
 
-x.addEventListener("click",function(){
-	var food=document.getElementById('area').value;
+x.addEventListener("click",theItem);
+
+
+function theItem(){
+	var food=y.value;
 	$.ajax({ 
 		url: "https://api.nutritionix.com/v1_1/search/"+food+"?fields=item_name,brand_name,nf_calories&appId=e3ffb58f&appKey=f9051e6f4fc5cf9724526dcf292a7e28",
 		success: function(data){
@@ -27,4 +31,15 @@ x.addEventListener("click",function(){
 						document.getElementById("c2").innerHTML= "Calories Per Serving:  " + c2;
 			}
 		});
+	y.value='';
+};
+
+
+y.addEventListener("keyup",function(e){
+	if(y.value!=''){
+		if(e.keyCode==13){
+			theItem();
+			y.value='';
+		}
+	}
 });

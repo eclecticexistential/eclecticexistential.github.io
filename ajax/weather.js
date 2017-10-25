@@ -64,8 +64,23 @@ check();
 }
 //closure of ajaxCall();
 
- 
+var cityValue=document.getElementById("cityInfo");
+
 document.getElementById("getWeather").addEventListener("click",function(){
 	ajaxCall();
-	document.getElementById("cityInfo").value='';
+	cityValue.value='';
 })
+
+cityValue.addEventListener("keyup",function(e){
+	if(cityValue.value!=''){
+		if(e.keyCode==13){
+			ajaxCall();
+			cityValue.value='';
+		}
+	}
+});
+
+
+
+
+
