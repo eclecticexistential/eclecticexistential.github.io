@@ -3,6 +3,8 @@ var dealerHand=0;
 var aces=0;
 var dealerAces=0;
 
+//get random numbers//
+
 function p(x){
   var p=(Math.floor((Math.random())*x)+1);
   return p;
@@ -11,6 +13,8 @@ function draw(){
   y=p(13);
   return y;
 }
+
+//get random suit//
 
 function suit(){
   var y=p(4);switch (y){
@@ -22,6 +26,8 @@ function suit(){
   return;
 }
 
+//get high cards//
+
 function kind(w){
   if(w==1)return "A ";
     if(w==11)return "J ";
@@ -30,6 +36,8 @@ function kind(w){
   return "" + w;
   }
 
+//account for aces being 1 || 11 //  
+  
 function total(m){
                     if(m>10)m=10;
                     score+=m;
@@ -37,15 +45,21 @@ function total(m){
                     if(score>21 && aces>0){return score-=10;}
                   return score;}
 
+//draw cards//				  
+				  
 function card(){
 return draw();
 }
+
+//init game//
 
 function game(){
   y=card()
   total(y);
   return (kind(y))+ ' ' +suit();
 }
+
+//deal cards//
 
 function cardTo(){
   var newNode = document.createElement('p');
@@ -57,31 +71,35 @@ function cardTo(){
             document.getElementById('player').appendChild(newNode);
 }
 
+//eliminate possible bug//
+
 function disable() {
     document.getElementById("play").disabled = 'true';
 }
 
 
-//play
+//play//
 document.getElementById("play").addEventListener("click", function(){
     cardTo();
     cardTo();
     document.getElementById("d").innerHTML="Current Score: "+score;
     disable();
 
-//hit
+//hit//
 document.getElementById("hit").addEventListener("click", function(){
   cardTo();
   document.getElementById("d").innerHTML="Updated score: "+score;
   if(score>21 && aces==0){alert("You busted!"); return pA();}
 });
 
-//stand
+//stand//
 document.getElementById("stand").addEventListener("click", function(){
   return dealer();
 });
 
 });
+
+//get dealersScore//
 
 function dealerScore(m){
                     if(m>10)m=10;
@@ -90,11 +108,15 @@ function dealerScore(m){
                     if(dealerHand>21 && dealerAces>0){return dealerHand-=10;}
                   return dealerHand;}
 
+//get dealer cards//				
+				  
 function dealerCard(){
     x=card()
     dealerScore(x)
     return (kind(x))+ ' ' +suit();
 }
+
+//display dealer hand//
 
 function dealer(){
   while(dealerHand<score){
@@ -116,6 +138,8 @@ function dealer(){
   return compare();
 }
 
+//find out who won//
+
 function compare(){
 	if(dealerHand<score){alert("You win!");}
 else return pA();
@@ -127,3 +151,5 @@ function pA(){
 	document.getElementById("stand").disabled = 'true';
 	document.getElementById("pa").addEventListener("click",function(){return document.location.reload();});
 }
+
+//find a better way to reset the game ^ //

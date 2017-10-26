@@ -2,6 +2,8 @@ var colorA = 0;
 var colorB = 0;
 var colorC = 0;
 
+//init when slider is changed//
+
 function changeSlide(area,num,box){
     var ready = document.getElementById(area),
       eff = document.getElementById(box),
@@ -36,6 +38,8 @@ function changeSlide(area,num,box){
       }
    }
 }
+
+//update colors accordingly//
 
 var array = [];
 var noScope=document.getElementById("purple");
@@ -83,7 +87,7 @@ function alter(m,n,o){
 	findOut();
 }
 
-
+//reset colors when not in use//
 
 function findOut(){
 	if(colorA!=0 || colorB!=0 || colorC!=0){
