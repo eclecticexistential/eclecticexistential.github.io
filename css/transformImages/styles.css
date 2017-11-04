@@ -7,21 +7,66 @@ body{
 	font-family:arial;
 }
 
+.main-nav {
+	text-align:center;
+	padding:1em;
+}
+
+.main-nav ul{
+	list-style:none;
+	margin:0.25em;
+	padding:0.25em;
+}
+.main-nav a{text-decoration:none;}
+
+.main-nav img{padding:0.5em;margin-bottom:1em;}
+
+.main-page-content{text-align:center;}
+
+.main-page-content h3{
+	font-family: 'Tangerine',arial;
+	font-size: 1.5em;
+	padding-bottom: 0.5em;
+}
+
+.main-page-content ul{list-style-type:none;}
+
+.main-page-content ul a{text-decoration: none;}
+
+.main-page-content li{
+	text-decoration: none;
+	padding: 1em;
+	margin:1.5em 1em;
+	border:1px solid grey;
+}
+
+.main-page-images{
+	display:none;
+}
+
+.here{
+	text-align:center;
+}
+.here div{
+	padding:0.5em;
+}
+
+.here div h2,
+.here div h4{
+	margin:0.5em;
+}
+
+@media (min-width:83em){
 .main-nav{
 	padding: 1.5em;
 	position: relative;
 	box-shadow: 1px 1px 1px rgba(0,0,0,0.2);
 }
-
-.main-nav h1{
-	padding-left:0.5em;
-}
+.main-nav h1{padding-left:0.5em;margin-left:-32em;}
 
 .main-nav h1,
 .main-nav ul,
-.main-nav li{
-	display:inline-block;
-}
+.main-nav li{display:inline-block;}
 
 .main-nav ul{
 	padding-left:7em;
@@ -31,13 +76,9 @@ body{
 	margin: 0.25em 0 0 11em;
 }
 
-.main-nav li{
-	padding: 1.75em 0 2em 4.5em;
-}
+.main-nav li{padding: 1.75em 0 2em 4.5em;}
 
-.main-nav img:nth-of-type(1){
-	margin-right: 2em;
-}
+.main-nav img:nth-of-type(1){margin-right: 2em;}
 
 .main-nav img{
 	float:right;
@@ -50,38 +91,21 @@ body{
 .main-page-content{
 	float: left;
 	width: 35%;
-	text-align: center;
 	margin: 2.75em 0 0 3.5em;
 	position: absolute;
-}
-
-.main-page-content h3{
-	font-family: 'Tangerine',arial;
-	font-size: 1.5em;
-	padding-bottom: 0.5em;
 }
 
 .main-page-content h1{
 	padding-bottom: 0.5em;
 }
 
-.main-page-content ul{
-	list-style-type:none;
-}
-
-.main-page-content ul a{
-	text-decoration: none;
-}
-
 .main-page-content li{
-	text-decoration: none;
-	padding: 1em;
 	margin:1.5em 0 0 4.5em;
 	width: 60%;
-	border:1px solid grey;
 }
 
 .main-page-images{
+	display:visible;
 	display: inline-block;
 	background:#000;
 	position: relative;
@@ -209,6 +233,7 @@ body{
 	right:0;
 	text-align:center;
 	padding:2em;
+	margin-left:3em;
 }
 .selected h2{
 	font-family: 'Yanone Kaffeesatz',arial;
@@ -220,8 +245,9 @@ body{
 	font-size:2.5em;
 	margin-bottom:1.5em;
 }
+}
 
-@media (min-width:43.750em){
+@media (min-width:70em){
 	#second-main-page{
 	margin-left:46.8em;
 	}

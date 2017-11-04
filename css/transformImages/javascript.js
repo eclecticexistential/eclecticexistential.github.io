@@ -1,3 +1,5 @@
+var $mainContent = $(".main-page-content");
+var $moveThis=$("#moveThis");
 var $mainImages = $(".main-page-images");
 var $doc = $('<div id="overlay"></div>');
 var $navButtons = $('<input type="button" class="navButtons" id="toLeft" value="<"><input type="button" class="navButtons" id="toRight" value=">"/><input type="button" class="navButtons" id="toExit" value="X"/>');
@@ -84,8 +86,10 @@ function imagesMove(e){
 	$doc.append($navButtons);
 	$doc.append(e.target);
 	removeNavImage(e);
+	$mainImages.empty();
 	$mainImages.append($doc);
 	$mainImages.animate({"margin-right":'+=600'},1000,"linear");
+	$mainContent.css('order','1').css('margin','0').append($moveThis);
 	$doc.children("img").unbind("click");
 };
 
@@ -94,6 +98,7 @@ $mainImages.on("click", '#toExit', exitButton);
 
 function exitButton(){
 		$mainImages.delay(400).animate({"margin-right":'-=600'},1000,"linear");
+		$mainContent.css('order','0');
 		catchAll();
 	};
 
