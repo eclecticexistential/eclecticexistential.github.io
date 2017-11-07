@@ -4,6 +4,7 @@ var url = "https://api.nasa.gov/planetary/apod?api_key=UB0smoKvw5r3io2IQ61TEikHi
 
 $.ajax({
   url: url,
+  //added to prevent lag on load and improve UX//
    beforeSend: function () {
         $('#copyright').html('Loading...').css('font-size','2em');
     },

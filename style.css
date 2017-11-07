@@ -151,8 +151,11 @@ footer {
 
 /* media queries */
 
-@media (min-width: 40.875em) {
+@media (min-width: 46.3em) {
+    
+}
+
+@media (min-width: 60.875em) {
     .col .btn {
-        margin: auto 1.5em 1.75em;
     }
 }

@@ -1,4 +1,4 @@
-
+/*main image and overlay on load*/
 *{
 	margin: 0;
 	padding: 0;
@@ -27,6 +27,8 @@
 	left:0;
 }
 
+
+/*divider between main image and NASA data*/
 .middle{
 	background:darkblue;
 	color: grey;
@@ -38,6 +40,8 @@
 	padding:0.15em;
 }
 
+
+/*Data from NASA AJAX call*/
 #copyright {
 	text-align:center;
 	font-size: 0.75em;
@@ -76,6 +80,8 @@
 	margin-top:auto;
 }
 
+
+/*nav bar at bottom*/
 nav {
 	background: #AAA;
 	margin:2em 0 1em;

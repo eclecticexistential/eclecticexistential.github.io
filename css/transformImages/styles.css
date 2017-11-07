@@ -7,6 +7,8 @@ body{
 	font-family:arial;
 }
 
+/*nav bar*/
+
 .main-nav {
 	text-align:center;
 	padding:1em;
@@ -20,6 +22,8 @@ body{
 .main-nav a{text-decoration:none;}
 
 .main-nav img{padding:0.5em;margin-bottom:1em;}
+
+/*main content*/
 
 .main-page-content{text-align:center;}
 
@@ -40,9 +44,13 @@ body{
 	border:1px solid grey;
 }
 
+/* do not show main images appended to overlay unless screen is appropriate size*/
+
 .main-page-images{
 	display:none;
 }
+
+/* names and roles of the Beautiful team*/
 
 .here{
 	text-align:center;
@@ -56,7 +64,10 @@ body{
 	margin:0.5em;
 }
 
+/*code for challenging project */
+
 @media (min-width:83em){
+	/*full size nav*/
 .main-nav{
 	padding: 1.5em;
 	position: relative;
@@ -88,6 +99,7 @@ body{
 	padding-left: 0.5em;
 }
 
+/*main content pushed to the left*/
 .main-page-content{
 	float: left;
 	width: 35%;
@@ -103,6 +115,8 @@ body{
 	margin:1.5em 0 0 4.5em;
 	width: 60%;
 }
+
+/*images organized into grid on the right */
 
 .main-page-images{
 	display:visible;
@@ -167,6 +181,8 @@ body{
 	max-width: 206px;
 }
 
+/*overlay appended in jquery*/
+
 #overlay{
 	text-align:center;
 	width: 47em;
@@ -177,17 +193,22 @@ body{
 	z-index:5;
 	background: rgba(0,0,0,1);
 }
+
+/*appended image*/
 #overlay img{
 	max-width: 500px;
 	max-height: 500px;
 }
 
+/*area "under" overlay/grid area*/
 #second-main-page{
 	position:relative;
 	width:43%;
 	z-index:-1;
 }
 
+
+/*mini images bar*/
 #navForImages{
 	position:absolute;
 	background: #DDD;
@@ -201,6 +222,8 @@ body{
 	height:62px;
 	padding:10px;
 }
+
+/*appended overlay buttons*/
 
 .navButtons{
 	height:40px;
@@ -221,6 +244,8 @@ body{
 #toExit{
 	margin-top:7.5em;
 }
+
+/*selected text to be displayed/altered via navbuttons*/
 
 .here{
 	display:none;

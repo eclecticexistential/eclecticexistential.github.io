@@ -4,6 +4,8 @@ var L = document.getElementById("left");
 var R = document.getElementById("right");
 var zenArray=["zengarden.css"];
 
+//change css link in head//
+
 function fillArray(){
 	var counter = 1;
 	while(counter<5){

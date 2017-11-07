@@ -27,6 +27,8 @@ function ajaxCall(){
   document.getElementById("hU").innerHTML="Humidity: " + hU +"%";
   document.getElementById("city").innerHTML=city;
 
+  
+//checks for day or night//
 function check(){
   if(diff<=0){
 		document.getElementById("weatherApp").style.background="#000";
@@ -44,6 +46,8 @@ function check(){
 		rain.style.visibility="hidden";
 		bolt.style.visibility="hidden";
   }
+  
+ //checks weather status to apply appropriate image//
   if(des=="broken clouds"||des=="scattered clouds"||des=="overcast clouds"||des=="few clouds"){
 		cloud.style.visibility="visible";
 		cloud.style.margin="3%";

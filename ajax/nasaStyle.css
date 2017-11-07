@@ -1,3 +1,4 @@
+/*adjust for two col layout*/
 #NASAApp{
 	height:40em;
 	text-align:center;
@@ -12,6 +13,8 @@
 	cursor: pointer;
 }
 
+/*adjusts for various screen sizes*/
+
 @media (min-width: 31.250em){
 	#NASAApp{
 		height:46em;
@@ -20,10 +23,6 @@
 	}
 	#NASAApp img{
 	margin:0.5em auto 1em;
-	}
-	
-	
-	#NASAApp a {
 	}
 }
 

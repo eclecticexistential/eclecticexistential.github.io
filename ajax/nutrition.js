@@ -3,7 +3,7 @@ var y=document.getElementById('area');
 
 x.addEventListener("click",theItem);
 
-
+//variations of s,b,c are nutrition info//
 function theItem(){
 	var food=y.value;
 	$.ajax({ 
@@ -34,7 +34,7 @@ function theItem(){
 	y.value='';
 };
 
-
+/*added so enter can be pressed to send AJAX call*/
 y.addEventListener("keyup",function(e){
 	if(y.value!=''){
 		if(e.keyCode==13){

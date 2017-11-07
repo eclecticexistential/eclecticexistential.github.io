@@ -2,6 +2,7 @@
 	height:45em;
 }
 
+/*adjust for different col amount*/
 
 @media (min-width:600px){
 	.col{

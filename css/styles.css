@@ -44,6 +44,8 @@
 	background: #A9A9AD;
 }
 
+/*buttons to navigate zen garden pages*/
+
 .carousel-buttons{
 	display: flex;
 	justify-content: space-around;
