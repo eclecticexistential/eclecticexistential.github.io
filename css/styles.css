@@ -1,47 +1,12 @@
-/* Special Nav Styles */
-*{
-	margin:0;
-	padding:0;
+#navi{
+	padding:1em;
 }
-.navi {
-	background: #AAA;
+#navi ul{
+	margin-top:-0.5em;
+	margin-bottom:-0.5em;
 }
-
-.navi ul{
-	max-height: 2.5em;
-	max-width: 100%;
-	display: flex;
-	flex:1;
-	justify-content:space-around;
-}
-
-.navi li{
-	list-style:none;
-	flex-direction: row;
-	font-family: arial;
-	font-family: "Poppins", sans-serif;
-	font-size: 2vh;
-	padding: 0.87em;
-}
-
-.navi ul a{
-	color: #000;
-}
-
-.navi ul a:hover{
-	text-decoration:none;
-	color:#FFF;
-	border-top:1px solid #000;
-}
-
-.navi ul li:hover{
-	background:#000;
-}
-
-
-.selected {
-	box-shadow: 0 1px 1px 1px rgba(0,0,0,0.2);
-	background: #A9A9AD;
+#navi li{
+	padding:1em;
 }
 
 /*buttons to navigate zen garden pages*/

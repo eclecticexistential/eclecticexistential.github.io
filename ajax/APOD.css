@@ -89,7 +89,7 @@ nav {
 }
 
 nav ul{
-	max-height: 1.75em;
+	max-height: 1.4em;
 	max-width: 100%;
 	display: flex;
 	flex:1;
@@ -101,7 +101,7 @@ nav li{
 	flex-direction: row;
 	font-family: arial;
 	font-family: "Poppins", sans-serif;
-	font-size: 2vh;
+	font-size: 0.75em;
 	padding: 0.87em;
 }
 
@@ -123,4 +123,13 @@ nav ul li:hover{
 .selected {
 	box-shadow: 0 1px 1px 1px rgba(0,0,0,0.2);
 	background: #A9A9AD;
+}
+
+@media (min-width:779px){
+	nav ul{
+	max-height: 2em;
+	}
+	nav li{
+		font-size:1em;
+	}
 }
