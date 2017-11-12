@@ -1,5 +1,4 @@
 var $mainContent = $(".main-page-content");
-var $moveThis=$("#moveThis");
 var $mainImages = $(".main-page-images");
 var $doc = $('<div id="overlay"></div>');
 var $navButtons = $('<input type="button" class="navButtons" id="toLeft" value="<"><input type="button" class="navButtons" id="toRight" value=">"/><input type="button" class="navButtons" id="toExit" value="X"/>');
@@ -78,6 +77,7 @@ function removeNavImage(e){
 	}
 }
 
+
 $images.on("click",imagesMove).on("click",makeVisible);
 
 function imagesMove(e){
@@ -88,8 +88,21 @@ function imagesMove(e){
 	removeNavImage(e);
 	$mainImages.empty();
 	$mainImages.append($doc);
-	$mainImages.animate({"margin-right":'+=600'},1000,"linear");
-	$mainContent.css('order','1').css('margin','0').append($moveThis);
+	if($(window).width()<1400){
+		
+		alert($(window).width()+"just right");
+		$mainImages.animate({"margin-right":'+=600'},1000,"linear");
+	}
+	if($(window).width()>1400&&$(window).width()<1700){
+		
+		alert($(window).width()+"middle ground");
+		$mainImages.animate({"margin-right":'+=800'},1000,"linear");
+	}
+	if($(window).width()>1700){
+		
+		alert($(window).width());
+		$mainImages.animate({"margin-right":"+=900"},1000,"linear");
+	}
 	$doc.children("img").unbind("click");
 };
 
@@ -97,7 +110,15 @@ function imagesMove(e){
 $mainImages.on("click", '#toExit', exitButton);
 
 function exitButton(){
-		$mainImages.delay(400).animate({"margin-right":'-=600'},1000,"linear");
+		if($(window).width()<1400){
+			$mainImages.delay(400).animate({"margin-right":'-=600'},1000,"linear");
+		}
+		if($(window).width()>1400&&$(window).width()<1700){
+			$mainImages.animate({"margin-right":'-=800'},1000,"linear");
+		}
+		if($(window).width()>1700){
+			$mainImages.delay(400).animate({"margin-right":"-=900"},1000,"linear");
+		}
 		$mainContent.css('order','0');
 		catchAll();
 	};
