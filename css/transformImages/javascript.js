@@ -90,17 +90,14 @@ function imagesMove(e){
 	$mainImages.append($doc);
 	if($(window).width()<1400){
 		
-		alert($(window).width()+"just right");
 		$mainImages.animate({"margin-right":'+=600'},1000,"linear");
 	}
 	if($(window).width()>1400&&$(window).width()<1700){
 		
-		alert($(window).width()+"middle ground");
 		$mainImages.animate({"margin-right":'+=800'},1000,"linear");
 	}
 	if($(window).width()>1700){
 		
-		alert($(window).width());
 		$mainImages.animate({"margin-right":"+=900"},1000,"linear");
 	}
 	$doc.children("img").unbind("click");
