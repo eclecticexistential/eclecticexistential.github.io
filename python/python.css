@@ -1,0 +1,25 @@
+#main_area img{
+	margin: 1.75em;
+}
+
+#main_area p {
+	padding: 0.5em;	
+}
+
+#main_area h3 {
+	padding-left: 0.25em;
+}
+
+#big {
+	background-color:purple;
+	height: auto;
+}
+
+#big h3 {
+	padding-left: 0em;
+	text-align:center;
+}
+
+#big p {
+	margin: 0.75em;
+}

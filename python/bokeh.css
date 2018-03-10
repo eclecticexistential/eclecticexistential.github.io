@@ -1,0 +1,44 @@
+body {
+	text-align:center;
+}
+
+#blockone h1{
+	margin: 5em 0 0.5em 0;
+}
+
+#blockone{
+	margin: 5em;
+}
+
+#blocktwo {
+	padding: 1em;
+}
+
+#blocktwo h3 {
+	color: white;
+	margin: 1.75em 0 2.5em;
+}
+
+#blocktwo p {
+	font-size: 18px;
+}
+#blockthree p, #blockfour p, #blockfive p, #blocksix p{
+	font-size: 20px;
+	margin: 2em 0.5em;
+	padding-left: 2em;
+	padding-right: 2em;
+}
+
+.outer {
+	height: auto;
+	background-color:white;
+}
+
+.inner {
+	padding: 1em;
+	margin: auto;
+}
+
+a {
+	color:green;
+}
