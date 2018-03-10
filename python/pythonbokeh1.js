@@ -1,4 +1,4 @@
-function regionalCensus() {
+function regionalBLS() {
             var fn = function() {
               Bokeh.safely(function() {
                 (function(root) {
@@ -32,7 +32,7 @@ function regionalCensus() {
             else document.addEventListener("DOMContentLoaded", fn);
           };
 		  
-function regionalBLS() {
+function regionalCensus() {
             var fn = function() {
               Bokeh.safely(function() {
                 (function(root) {
@@ -143,7 +143,7 @@ setTimeout(function(){
 
 setTimeout(function(){
     regionalCensus();
-}, 7500);
+}, 750);
 
 setTimeout(function(){
     census();
