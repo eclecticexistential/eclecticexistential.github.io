@@ -10,16 +10,24 @@
 	padding-left: 0.25em;
 }
 
-#big {
-	background-color:purple;
+#big, #mtg {
 	height: auto;
 }
 
-#big h3 {
+#big {
+	background-color:purple;
+}
+
+#big h3, #mtg h3 {
 	padding-left: 0em;
 	text-align:center;
 }
 
 #big p {
 	margin: 0.75em;
+}
+
+#mtg {
+	background-color: silver;
+	color: white;
 }

@@ -2,12 +2,13 @@ body {
 	text-align:center;
 }
 
-#blockone h1{
-	margin: 5em 0 0.5em 0;
+#blockone{
+	margin-top: 6em;
 }
 
-#blockone{
-	margin: 5em;
+#blockone p {
+	margin-top: 1em;
+	margin-bottom: 2em;
 }
 
 #blocktwo {
