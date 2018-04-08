@@ -1,0 +1,17 @@
+@media (max-width: 500px) {
+	.col {
+		min-width: 200px;
+	}
+	.bk-root {
+		justify-content: center;
+	}
+}
+
+@media (max-width: 1000px) {
+	.col {
+		min-width: 300px;
+	}
+	.bk-root {
+		justify-content: center;
+	}
+}
