@@ -4,8 +4,8 @@
                 (function(root) {
                   function embed_document(root) {
                     
-                  var docs_json = document.getElementById('6882f9da-dbb6-4f85-ac07-c33620e09872').textContent;
-                  var render_items = [{"docid":"7ed94f96-9c63-4a2c-b3fd-ccfa4e849fda","elementid":"68b3c0c0-acbc-43eb-aea3-cde33fbc4198","modelid":"2897a60c-4a1c-4372-b5e2-36142615dde5"}];
+                  var docs_json = document.getElementById('56533d24-8c33-421b-b020-d7c30af7c39c').textContent;
+                  var render_items = [{"docid":"6be98ef2-1230-4ad4-8592-d39c0f97786e","elementid":"92957fe6-242c-4d9b-8e89-51cf529ba732","modelid":"7c09b165-f2ae-44e1-9f5b-e82f3c79cce9"}];
                   root.Bokeh.embed.embed_items(docs_json, render_items);
                 
                   }
@@ -31,48 +31,15 @@
             if (document.readyState != "loading") fn();
             else document.addEventListener("DOMContentLoaded", fn);
           })();
+
 (function() {
             var fn = function() {
               Bokeh.safely(function() {
                 (function(root) {
                   function embed_document(root) {
                     
-                  var docs_json = document.getElementById('39e67a54-7cd9-4256-ab23-b6a4f2a4214e').textContent;
-                  var render_items = [{"docid":"b616836e-31d9-4764-b8dd-cbf4a0206f90","elementid":"d0beabf3-df41-400a-9c59-a822913597dd","modelid":"d510ddab-144e-4967-a217-0438e82b5e0e"}];
-                  root.Bokeh.embed.embed_items(docs_json, render_items);
-                
-                  }
-                  if (root.Bokeh !== undefined) {
-                    embed_document(root);
-                  } else {
-                    var attempts = 0;
-                    var timer = setInterval(function(root) {
-                      if (root.Bokeh !== undefined) {
-                        embed_document(root);
-                        clearInterval(timer);
-                      }
-                      attempts++;
-                      if (attempts > 100) {
-                        console.log("Bokeh: ERROR: Unable to run BokehJS code because BokehJS library is missing")
-                        clearInterval(timer);
-                      }
-                    }, 10, root)
-                  }
-                })(window);
-              });
-            };
-            if (document.readyState != "loading") fn();
-            else document.addEventListener("DOMContentLoaded", fn);
-          })();
-		  
-(function() {
-            var fn = function() {
-              Bokeh.safely(function() {
-                (function(root) {
-                  function embed_document(root) {
-                    
-                  var docs_json = document.getElementById('c5732bf5-13df-4ea0-a3fa-3ee7145c29c5').textContent;
-                  var render_items = [{"docid":"04b42576-4694-40eb-abcb-0a1f005dc7fd","elementid":"3ca18f53-b7cf-435a-940c-6a6a616fa67d","modelid":"8bbf6d7b-d1ac-4c03-8411-eeb47eac231e"}];
+                  var docs_json = document.getElementById('ed5296e9-a4e9-41a8-91b7-709604d68b0c').textContent;
+                  var render_items = [{"docid":"4f30ff2a-7849-44b2-96d7-ea6a687396b4","elementid":"96649a87-30d8-4e70-84a2-a4c61846e042","modelid":"f4dd8ed9-f456-45bc-9789-a7f79b422f74"}];
                   root.Bokeh.embed.embed_items(docs_json, render_items);
                 
                   }
@@ -105,8 +72,8 @@
                 (function(root) {
                   function embed_document(root) {
                     
-                  var docs_json = document.getElementById('f078351c-2f41-4057-8b23-25e3f39e8ab0').textContent;
-                  var render_items = [{"docid":"08942d35-fee7-4112-baca-ffb13008cb74","elementid":"6f666402-bcb2-449b-80d2-350657f0e9b1","modelid":"0514f0b1-7444-493d-970d-04dfcd080a18"}];
+                  var docs_json = document.getElementById('9b202f65-e5fc-4475-8435-548712768303').textContent;
+                  var render_items = [{"docid":"66480bf8-50ff-45d5-b18c-b60d0504cf45","elementid":"f5afe174-a716-4542-b083-8f7e85625f34","modelid":"3dd74951-69ba-45a5-87c4-f91d70722c9e"}];
                   root.Bokeh.embed.embed_items(docs_json, render_items);
                 
                   }
@@ -139,8 +106,8 @@
                 (function(root) {
                   function embed_document(root) {
                     
-                  var docs_json = document.getElementById('453d79c4-380d-4a64-889b-c97bed5bdc4c').textContent;
-                  var render_items = [{"docid":"0fa72656-3e48-434d-a2d7-a6d1fe218fab","elementid":"04dcd3e6-c5ff-4e7c-8d0b-6fd942675544","modelid":"8bbc4a36-efc5-4227-ae72-d88a1432592f"}];
+                  var docs_json = document.getElementById('adc14d0a-d6ae-451d-b42a-79c0eb657c12').textContent;
+                  var render_items = [{"docid":"92f17cee-35ed-44cc-82b4-f0b686027e77","elementid":"b14862ff-39d2-4133-a96a-387a1fa25b26","modelid":"78d74f25-b98f-407b-b119-ed30efbc0a60"}];
                   root.Bokeh.embed.embed_items(docs_json, render_items);
                 
                   }
@@ -173,8 +140,8 @@
                 (function(root) {
                   function embed_document(root) {
                     
-                  var docs_json = document.getElementById('251c6fe9-5a0c-4bf8-ae17-6dafa1c483e9').textContent;
-                  var render_items = [{"docid":"ed16b63c-a1d9-4bda-8a42-efaaeabfad9f","elementid":"a084911a-1b89-4602-8ba6-1b41e68e438d","modelid":"173e76de-a89e-41c6-b682-62c2045a2f28"}];
+                  var docs_json = document.getElementById('5b7e7017-ff76-4818-b24f-7e020538b679').textContent;
+                  var render_items = [{"docid":"dbfe878e-0c0f-477b-a200-de25abba3c1a","elementid":"28224222-ecd7-4085-aba0-9f634d870971","modelid":"5e3e3c0c-d954-4cd6-8a98-f61877f354d5"}];
                   root.Bokeh.embed.embed_items(docs_json, render_items);
                 
                   }
@@ -207,8 +174,8 @@
                 (function(root) {
                   function embed_document(root) {
                     
-                  var docs_json = document.getElementById('57025b83-f702-442a-8a33-2aece4cccf69').textContent;
-                  var render_items = [{"docid":"ba3fa721-3b33-40a3-9e5c-bc67549ba820","elementid":"c92347af-1a9f-43a8-bd00-88e7d9f003cc","modelid":"0c8205c8-c306-43a0-ac6e-09a6cb7ff016"}];
+                  var docs_json = document.getElementById('528baa82-4952-4412-b934-f1d4cdf7569b').textContent;
+                  var render_items = [{"docid":"f41ef942-e35c-45e6-ae2e-b8ea6fb5abcf","elementid":"0cbe24f5-a87f-46b9-8b1a-c9f59c0637b1","modelid":"7d2d29b2-0c55-4400-ad69-64161e75ae90"}];
                   root.Bokeh.embed.embed_items(docs_json, render_items);
                 
                   }
@@ -241,8 +208,8 @@
                 (function(root) {
                   function embed_document(root) {
                     
-                  var docs_json = document.getElementById('4094c485-efe8-4461-8f49-8671414a7589').textContent;
-                  var render_items = [{"docid":"f566e129-c352-4036-9263-ef6011fab7cc","elementid":"6a386419-820b-471e-a8c8-183733560f1b","modelid":"71b9faf3-eed1-4c2c-b9df-547f0a6ab9ac"}];
+                  var docs_json = document.getElementById('a8bc9ddc-8a14-466a-8e44-27b0bf84c5e4').textContent;
+                  var render_items = [{"docid":"1ef27aa1-edbf-4f84-b729-82b87cc1fe09","elementid":"d57ec769-d811-48b8-a479-3c9676153523","modelid":"9f1989c9-c7ae-4e2e-a650-a38f9571e9fe"}];
                   root.Bokeh.embed.embed_items(docs_json, render_items);
                 
                   }
@@ -275,8 +242,8 @@
                 (function(root) {
                   function embed_document(root) {
                     
-                  var docs_json = document.getElementById('77316dda-f779-4afa-b863-c7671c2de329').textContent;
-                  var render_items = [{"docid":"a05161e1-339a-4de1-a534-7794759f694c","elementid":"dc982ba7-f77e-4e0c-a543-4a23f6cba72a","modelid":"28d681c1-10c8-412a-b818-16582d29664c"}];
+                  var docs_json = document.getElementById('bfd3ae1b-7bda-4bfa-bc3f-d27eb22d3aa4').textContent;
+                  var render_items = [{"docid":"0e730bcc-05af-40a5-bcda-915f7c67ded6","elementid":"247d352c-ab1b-4994-92f7-f638a4b278eb","modelid":"487fd52b-79b4-4390-8cd4-d132f72c6d23"}];
                   root.Bokeh.embed.embed_items(docs_json, render_items);
                 
                   }
@@ -309,8 +276,8 @@
                 (function(root) {
                   function embed_document(root) {
                     
-                  var docs_json = document.getElementById('a847c05c-1349-4aab-a159-ac672218d0c6').textContent;
-                  var render_items = [{"docid":"8fc83192-65be-46c0-9a24-9fb9db540032","elementid":"12de1c09-5cdb-413f-80a7-722bfe512fa8","modelid":"c13c5770-b076-46ac-8a69-e10e0f86f189"}];
+                  var docs_json = document.getElementById('c3a23d9c-04ce-4da0-b9bc-b1ed699a2738').textContent;
+                  var render_items = [{"docid":"e78f4da9-4060-4977-93a5-6e0ef109361c","elementid":"20caad70-1e05-4793-b434-06b4b62ed43f","modelid":"3accaafa-5da7-4fd4-bf4d-a636e4caa473"}];
                   root.Bokeh.embed.embed_items(docs_json, render_items);
                 
                   }
@@ -343,8 +310,8 @@
                 (function(root) {
                   function embed_document(root) {
                     
-                  var docs_json = document.getElementById('7d11daed-c890-41a5-95e2-5edfd6d9eafc').textContent;
-                  var render_items = [{"docid":"4488bda7-b835-4f97-a9b8-013af3321bdf","elementid":"f763243b-3f9e-4fec-b8f2-2ad527bc052a","modelid":"9811d807-c2f0-482a-82e3-69c8f630c360"}];
+                  var docs_json = document.getElementById('2ecb5153-c05e-48d2-9473-1ce8674eb7ed').textContent;
+                  var render_items = [{"docid":"83004efb-b4f8-49e9-9f7c-ba4f0387545f","elementid":"58c6eda6-a2dc-4325-a7f7-686764f64552","modelid":"db9380c2-120e-4898-b0e3-4564a6894001"}];
                   root.Bokeh.embed.embed_items(docs_json, render_items);
                 
                   }
@@ -377,8 +344,42 @@
                 (function(root) {
                   function embed_document(root) {
                     
-                  var docs_json = document.getElementById('108095a6-7b4e-4f92-af7b-113c8f9a3612').textContent;
-                  var render_items = [{"docid":"416456d4-6f64-4129-bb53-8fd1cb97fe5c","elementid":"1317def0-a9ac-4782-86de-97a92d93e709","modelid":"d5cb7374-c3bf-4292-b672-da6cb9c07050"}];
+                  var docs_json = document.getElementById('710b3279-f8fa-480a-b225-7848f829e47e').textContent;
+                  var render_items = [{"docid":"aa465d3d-d62b-4135-b24b-ebe9f1bd04fb","elementid":"61783b0a-5395-4bb2-9294-e6f7765f9716","modelid":"29797359-6203-47fb-a4de-fbb4cafc7e1c"}];
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                
+                  }
+                  if (root.Bokeh !== undefined) {
+                    embed_document(root);
+                  } else {
+                    var attempts = 0;
+                    var timer = setInterval(function(root) {
+                      if (root.Bokeh !== undefined) {
+                        embed_document(root);
+                        clearInterval(timer);
+                      }
+                      attempts++;
+                      if (attempts > 100) {
+                        console.log("Bokeh: ERROR: Unable to run BokehJS code because BokehJS library is missing")
+                        clearInterval(timer);
+                      }
+                    }, 10, root)
+                  }
+                })(window);
+              });
+            };
+            if (document.readyState != "loading") fn();
+            else document.addEventListener("DOMContentLoaded", fn);
+          })();
+		  
+(function() {
+            var fn = function() {
+              Bokeh.safely(function() {
+                (function(root) {
+                  function embed_document(root) {
+                    
+                  var docs_json = document.getElementById('22c15fda-5d61-474a-b17e-bce4941fa45a').textContent;
+                  var render_items = [{"docid":"164ba082-9c63-45fa-9a41-117c43c0678b","elementid":"54014cbd-0cb3-49b6-9e3c-ae7b19229e14","modelid":"469cf80c-e6f2-41a6-8919-4e5904cc8985"}];
                   root.Bokeh.embed.embed_items(docs_json, render_items);
                 
                   }
