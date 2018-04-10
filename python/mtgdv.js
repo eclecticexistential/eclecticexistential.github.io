@@ -405,3 +405,36 @@
             if (document.readyState != "loading") fn();
             else document.addEventListener("DOMContentLoaded", fn);
           })();
+(function() {
+            var fn = function() {
+              Bokeh.safely(function() {
+                (function(root) {
+                  function embed_document(root) {
+                    
+                  var docs_json = document.getElementById('2024e9a5-58e0-4ada-bb63-9b3b9732303e').textContent;
+                  var render_items = [{"docid":"6331868c-71f2-4c2e-9a0d-53b1e350b616","elementid":"d1020c36-7fe1-48ce-bb4b-445f2e74066b","modelid":"998fecc4-8512-449f-a804-1067bd49f07b"}];
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                
+                  }
+                  if (root.Bokeh !== undefined) {
+                    embed_document(root);
+                  } else {
+                    var attempts = 0;
+                    var timer = setInterval(function(root) {
+                      if (root.Bokeh !== undefined) {
+                        embed_document(root);
+                        clearInterval(timer);
+                      }
+                      attempts++;
+                      if (attempts > 100) {
+                        console.log("Bokeh: ERROR: Unable to run BokehJS code because BokehJS library is missing")
+                        clearInterval(timer);
+                      }
+                    }, 10, root)
+                  }
+                })(window);
+              });
+            };
+            if (document.readyState != "loading") fn();
+            else document.addEventListener("DOMContentLoaded", fn);
+          })();

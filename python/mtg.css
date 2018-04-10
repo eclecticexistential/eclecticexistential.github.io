@@ -1,17 +1,11 @@
-@media (max-width: 500px) {
+@media (max-width: 600px) {
 	.col {
-		min-width: 200px;
-	}
-	.bk-root {
-		justify-content: center;
+		min-width: 150px;
 	}
 }
 
 @media (max-width: 1000px) {
 	.col {
 		min-width: 300px;
-	}
-	.bk-root {
-		justify-content: center;
 	}
 }
