@@ -202,14 +202,50 @@
             else document.addEventListener("DOMContentLoaded", fn);
           })();
 		  
+
+		  
 (function() {
             var fn = function() {
               Bokeh.safely(function() {
                 (function(root) {
                   function embed_document(root) {
                     
-                  var docs_json = document.getElementById('a8bc9ddc-8a14-466a-8e44-27b0bf84c5e4').textContent;
-                  var render_items = [{"docid":"1ef27aa1-edbf-4f84-b729-82b87cc1fe09","elementid":"d57ec769-d811-48b8-a479-3c9676153523","modelid":"9f1989c9-c7ae-4e2e-a650-a38f9571e9fe"}];
+                  var docs_json = document.getElementById('e2e616d2-abb5-448f-829f-405abc67779e').textContent;
+                  var render_items = [{"docid":"93645447-a09a-401f-87c3-8b87a80df2d0","elementid":"54efa676-1368-4bf6-a7e9-857f0a69f62e","modelid":"f0fa1eaa-14fa-4b41-ab44-14b269486568"}];
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                
+                  }
+                  if (root.Bokeh !== undefined) {
+                    embed_document(root);
+                  } else {
+                    var attempts = 0;
+                    var timer = setInterval(function(root) {
+                      if (root.Bokeh !== undefined) {
+                        embed_document(root);
+                        clearInterval(timer);
+                      }
+                      attempts++;
+                      if (attempts > 100) {
+                        console.log("Bokeh: ERROR: Unable to run BokehJS code because BokehJS library is missing")
+                        clearInterval(timer);
+                      }
+                    }, 10, root)
+                  }
+                })(window);
+              });
+            };
+            if (document.readyState != "loading") fn();
+            else document.addEventListener("DOMContentLoaded", fn);
+          })();
+
+(function() {
+            var fn = function() {
+              Bokeh.safely(function() {
+                (function(root) {
+                  function embed_document(root) {
+                    
+                  var docs_json = document.getElementById('b180e2eb-7264-4b10-8b3f-e596eac5cba2').textContent;
+                  var render_items = [{"docid":"89dc5b69-481a-4ba7-8221-78d5d7bee27f","elementid":"c74f5f80-4820-40de-8425-c508120ce574","modelid":"b9e43371-f6c3-4bd3-884a-bd4ad962aada"}];
                   root.Bokeh.embed.embed_items(docs_json, render_items);
                 
                   }
@@ -242,8 +278,42 @@
                 (function(root) {
                   function embed_document(root) {
                     
-                  var docs_json = document.getElementById('bfd3ae1b-7bda-4bfa-bc3f-d27eb22d3aa4').textContent;
-                  var render_items = [{"docid":"0e730bcc-05af-40a5-bcda-915f7c67ded6","elementid":"247d352c-ab1b-4994-92f7-f638a4b278eb","modelid":"487fd52b-79b4-4390-8cd4-d132f72c6d23"}];
+                  var docs_json = document.getElementById('ab052a40-446c-47e6-ba6e-d0b1db398432').textContent;
+                  var render_items = [{"docid":"b7a179df-45b3-44ec-87f2-99f7df5e73cc","elementid":"2db4018b-334f-478a-90d4-8dc28dab907a","modelid":"7cc1c16a-7a0c-4938-b723-f761107e9c84"}];
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                
+                  }
+                  if (root.Bokeh !== undefined) {
+                    embed_document(root);
+                  } else {
+                    var attempts = 0;
+                    var timer = setInterval(function(root) {
+                      if (root.Bokeh !== undefined) {
+                        embed_document(root);
+                        clearInterval(timer);
+                      }
+                      attempts++;
+                      if (attempts > 100) {
+                        console.log("Bokeh: ERROR: Unable to run BokehJS code because BokehJS library is missing")
+                        clearInterval(timer);
+                      }
+                    }, 10, root)
+                  }
+                })(window);
+              });
+            };
+            if (document.readyState != "loading") fn();
+            else document.addEventListener("DOMContentLoaded", fn);
+          })();
+	
+(function() {
+            var fn = function() {
+              Bokeh.safely(function() {
+                (function(root) {
+                  function embed_document(root) {
+                    
+                  var docs_json = document.getElementById('19a88931-0fbe-468e-a201-1dd63bae2a1c').textContent;
+                  var render_items = [{"docid":"51ca2da4-d8fb-44ed-b9ca-1a1c67b55a5a","elementid":"576b1df0-48cb-4899-ba43-81b1875e6ed6","modelid":"acb0eb5f-c5d6-4b74-8686-04b6e4737477"}];
                   root.Bokeh.embed.embed_items(docs_json, render_items);
                 
                   }
@@ -276,8 +346,8 @@
                 (function(root) {
                   function embed_document(root) {
                     
-                  var docs_json = document.getElementById('c3a23d9c-04ce-4da0-b9bc-b1ed699a2738').textContent;
-                  var render_items = [{"docid":"e78f4da9-4060-4977-93a5-6e0ef109361c","elementid":"20caad70-1e05-4793-b434-06b4b62ed43f","modelid":"3accaafa-5da7-4fd4-bf4d-a636e4caa473"}];
+                  var docs_json = document.getElementById('6adf3c76-70b0-4b09-b0ae-9200fb9b3f7a').textContent;
+                  var render_items = [{"docid":"8685ab22-e2fd-48e3-b8cf-b3225877b077","elementid":"40c1f6fc-c585-4314-89be-881183804206","modelid":"9f832aa3-bab2-4b93-971e-d9a3025e66e2"}];
                   root.Bokeh.embed.embed_items(docs_json, render_items);
                 
                   }
@@ -310,8 +380,8 @@
                 (function(root) {
                   function embed_document(root) {
                     
-                  var docs_json = document.getElementById('2ecb5153-c05e-48d2-9473-1ce8674eb7ed').textContent;
-                  var render_items = [{"docid":"83004efb-b4f8-49e9-9f7c-ba4f0387545f","elementid":"58c6eda6-a2dc-4325-a7f7-686764f64552","modelid":"db9380c2-120e-4898-b0e3-4564a6894001"}];
+                  var docs_json = document.getElementById('59e41319-0f38-47a8-9643-2af87c4869c9').textContent;
+                  var render_items = [{"docid":"0575cd6c-f4c3-4379-b9bc-1aacb07c91cc","elementid":"20c98188-69de-483f-a48a-1922612c7c8c","modelid":"b5e29f4b-d727-43c9-93b4-f4335da108ea"}];
                   root.Bokeh.embed.embed_items(docs_json, render_items);
                 
                   }
@@ -344,8 +414,8 @@
                 (function(root) {
                   function embed_document(root) {
                     
-                  var docs_json = document.getElementById('710b3279-f8fa-480a-b225-7848f829e47e').textContent;
-                  var render_items = [{"docid":"aa465d3d-d62b-4135-b24b-ebe9f1bd04fb","elementid":"61783b0a-5395-4bb2-9294-e6f7765f9716","modelid":"29797359-6203-47fb-a4de-fbb4cafc7e1c"}];
+                  var docs_json = document.getElementById('98ca2523-3de7-4339-803c-f8380dc913d4').textContent;
+                  var render_items = [{"docid":"a3f3d68e-6c73-4b7e-ab58-50a7b9007566","elementid":"bbf3bdcd-74b1-49e7-b779-4d1148c03953","modelid":"c2fb3f12-e70b-44c5-b04a-7ece2001e14c"}];
                   root.Bokeh.embed.embed_items(docs_json, render_items);
                 
                   }
@@ -372,69 +442,10 @@
             else document.addEventListener("DOMContentLoaded", fn);
           })();
 		  
-(function() {
-            var fn = function() {
-              Bokeh.safely(function() {
-                (function(root) {
-                  function embed_document(root) {
-                    
-                  var docs_json = document.getElementById('22c15fda-5d61-474a-b17e-bce4941fa45a').textContent;
-                  var render_items = [{"docid":"164ba082-9c63-45fa-9a41-117c43c0678b","elementid":"54014cbd-0cb3-49b6-9e3c-ae7b19229e14","modelid":"469cf80c-e6f2-41a6-8919-4e5904cc8985"}];
-                  root.Bokeh.embed.embed_items(docs_json, render_items);
-                
-                  }
-                  if (root.Bokeh !== undefined) {
-                    embed_document(root);
-                  } else {
-                    var attempts = 0;
-                    var timer = setInterval(function(root) {
-                      if (root.Bokeh !== undefined) {
-                        embed_document(root);
-                        clearInterval(timer);
-                      }
-                      attempts++;
-                      if (attempts > 100) {
-                        console.log("Bokeh: ERROR: Unable to run BokehJS code because BokehJS library is missing")
-                        clearInterval(timer);
-                      }
-                    }, 10, root)
-                  }
-                })(window);
-              });
-            };
-            if (document.readyState != "loading") fn();
-            else document.addEventListener("DOMContentLoaded", fn);
-          })();
-(function() {
-            var fn = function() {
-              Bokeh.safely(function() {
-                (function(root) {
-                  function embed_document(root) {
-                    
-                  var docs_json = document.getElementById('2024e9a5-58e0-4ada-bb63-9b3b9732303e').textContent;
-                  var render_items = [{"docid":"6331868c-71f2-4c2e-9a0d-53b1e350b616","elementid":"d1020c36-7fe1-48ce-bb4b-445f2e74066b","modelid":"998fecc4-8512-449f-a804-1067bd49f07b"}];
-                  root.Bokeh.embed.embed_items(docs_json, render_items);
-                
-                  }
-                  if (root.Bokeh !== undefined) {
-                    embed_document(root);
-                  } else {
-                    var attempts = 0;
-                    var timer = setInterval(function(root) {
-                      if (root.Bokeh !== undefined) {
-                        embed_document(root);
-                        clearInterval(timer);
-                      }
-                      attempts++;
-                      if (attempts > 100) {
-                        console.log("Bokeh: ERROR: Unable to run BokehJS code because BokehJS library is missing")
-                        clearInterval(timer);
-                      }
-                    }, 10, root)
-                  }
-                })(window);
-              });
-            };
-            if (document.readyState != "loading") fn();
-            else document.addEventListener("DOMContentLoaded", fn);
-          })();
+
+		  
+
+		  
+
+		  
+
