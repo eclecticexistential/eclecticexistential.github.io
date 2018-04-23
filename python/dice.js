@@ -38,8 +38,8 @@
                 (function(root) {
                   function embed_document(root) {
                     
-                  var docs_json = document.getElementById('42614eef-7ff7-4584-b194-1f2d84f06401').textContent;
-                  var render_items = [{"docid":"6b662ff7-b9a5-41bc-90e6-ffa982497c1b","elementid":"05a6fd0b-1b28-4b61-a044-8e23be84ddbe","modelid":"ab70e05b-6691-4947-87d3-597b89decade"}];
+                  var docs_json = document.getElementById('6a954a3c-c9e7-4846-8fc0-713aebcbf494').textContent;
+                  var render_items = [{"docid":"435ee157-b97a-47ed-8246-b7d8eee7f95e","elementid":"b9cfb021-91d5-4db6-9619-4339a531666c","modelid":"448f3430-3e4d-413c-a2bf-eb3c89e4734b"}];
                   root.Bokeh.embed.embed_items(docs_json, render_items);
                 
                   }
