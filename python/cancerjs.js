@@ -52,9 +52,7 @@ var pictureList = [
 
 var $sc = $('#state_area')
 
-$(document).ready(function () {
-    $('#picDD').change(function () {
-        var val = $(this).val();
-		$sc.children('img').attr("src", pictureList[val-1]);
-    })
-});
+$('#picDD').change(function () {
+	var val = $(this).val();
+	$sc.children('img').attr("src", pictureList[val-1]);
+})
