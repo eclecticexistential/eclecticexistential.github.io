@@ -10,7 +10,7 @@
 	padding-left: 0.25em;
 }
 
-#big, #mtg {
+#big, #mtg, #cancer {
 	height: auto;
 }
 
@@ -18,13 +18,17 @@
 	background-color:purple;
 }
 
-#big h3, #mtg h3 {
+#big h3, #mtg h3, #cancer h3 {
 	padding-left: 0em;
 	text-align:center;
 }
 
 #big p {
 	margin: 0.75em;
+}
+
+#cancer {
+	background-color: lavender;
 }
 
 #mtg {
