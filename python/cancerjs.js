@@ -1,0 +1,60 @@
+var pictureList = [
+    "../img/alabama.png",
+    "../img/alaska.png",
+    "../img/arizona.png",
+    "../img/arkansas.png",
+	"../img/california.png",
+    "../img/colorado.png",
+    "../img/Connecticut.png",
+    "../img/Delaware.png",
+	"../img/Florida.png",
+    "../img/Georgia.png",
+    "../img/Hawaii.png",
+    "../img/Idaho.png",
+	"../img/Illinois.png",
+    "../img/Indiana.png",
+    "../img/Iowa.png",
+    "../img/Kansas.png",
+	"../img/Kentucky.png",
+    "../img/Louisiana.png",
+	"../img/Massachusetts.png",
+	"../img/Maryland.png",
+	"../img/Maine.png",
+	"../img/Michigan.png",
+	"../img/Minnesota.png",
+	"../img/Missouri.png",
+	"../img/Mississippi.png",
+	"../img/Montana.png",
+	"../img/North Carolina.png",
+	"../img/North Dakota.png",
+	"../img/Nebraska.png",
+	"../img/New Hampshire.png",
+	"../img/New Jersey.png",
+	"../img/New Mexico.png",
+	"../img/Nevada.png",
+	"../img/New York.png",
+	"../img/Ohio.png",
+	"../img/Oklahoma.png",
+	"../img/Oregon.png",
+	"../img/Pennsylvania.png",
+	"../img/Rhode Island.png",
+	"../img/South Carolina.png",
+	"../img/South Dakota.png",
+	"../img/Tennessee.png",
+	"../img/Texas.png",
+	"../img/Utah.png",
+	"../img/Virginia.png",
+	"../img/Vermont.png",
+	"../img/Washington.png",
+	"../img/Wisconsin.png",
+	"../img/West Virginia.png",
+	"../img/Wyoming.png", ];
+
+var $sc = $('#state_area')
+
+$(document).ready(function () {
+    $('#picDD').change(function () {
+        var val = $(this).val();
+		$sc.children('img').attr("src", pictureList[val-1]);
+    })
+});
