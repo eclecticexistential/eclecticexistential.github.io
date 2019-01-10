@@ -37,59 +37,35 @@
 
     <div class="container" id="main_area">
       <div class="row">
-        <div class="col col-sm-12 col-lg-6">
+        <div class="col col-sm-12 col-lg-4">
           <h3>Django/Heroku App</h3>
 					  <p>
-						Developed Django website equipped with a landing page, admin access, as well as two apps: Scraper and Polling. 
-						Users can actively create questions and vote on said inquiries. Bleach is used to sanitize content prior to database save. 
-						Scraper app retrieves content from website based on target class/id/tag.
+						Developed Django website and three apps: web scraper, polling, and SFV player comparison app. 
+						All content is stored in SQLite to-date.
 						</p>
 				  <img class="img-fluid" src="../img/polls.PNG" alt="Polls Landing Page"></img>
 			  <a class="btn btn-warning  mx-5" href="http://scrapableornaw.herokuapp.com" role="button"> Visit Site &raquo;</a>
         </div>
-        <div class="col col-sm-12 col-lg-6">
+        <div class="col col-sm-12 col-lg-4">
           <h3>Basic MTG Simulation APP</h3>
 				  <p>
-					To simulate one of my hobbies, MTG, I developed a basic simulation of the card game. 
-					Users can create a customized deck and test out how it performs against a similar deck packed with 'competitive edge' cards.
-					Once this personalized deck is submitted, 1,000 games are simulated, and the user is redirected to the results.
+					Created a basic simulation of the card game. Numbers represent certain cards/functionality.
+					Users create a customized deck and test it against a similar deck packed with 'competitive edge' cards.
+					1,000 games are ran and results are displayed in Flask app.
 				  </p>
-			  <img class="img-fluid m-auto" src="../img/mtg_app.PNG" id="mtg-app" alt="App Source Code Picture"></img>
+			  <img class="img-fluid" src="../img/mtg_app.PNG" id="mtg-app" alt="App Source Code Picture"></img>
           <a class="btn btn-warning mx-5" href="http://eclecticexistential.pythonanywhere.com/" role="button"> Use MTG Simulation App &raquo;</a>
        </div>
+	   <div class="col col-sm-12 col-lg-4">
+          <h3>Data Visualization Projects</h3>
+				  <p>
+					<b>How Fast is Automation Reducing Job Availability?</b> And other questions are explored.
+					Noteworthy projects include New Cancer Instances, 10,000 Dice Game, and Twitch FGC stats.
+				  </p>
+			  <img class="img-fluid" src="../img/Census.PNG" id="mtg-app" alt="App Source Code Picture"></img>
+          <a class="btn btn-warning mx-5" href="mid.html" role="button"> Check Them Out &raquo;</a>
+       </div>
 	  </div>
-	   <div class="row">
-	   <div class="col col-sm-12 col-lg-12" id='big'>
-			  <h3>Data Visualization Projects</h3>
-					  <p class= "mx-5">
-						<b>How Fast is Automation Reducing Job Availability?</b> I wanted to know the answer to this question for my Code Louisville Python Project.
-						To accomplish this goal, I gathered datasets from the U.S. Census, Bureau of Labor Statistics, and JOLTS.
-						End results show an estimated 27 million people without a job available to them in 2016.
-					  </p>
-				  <img class="img-fluid" src="../img/Census.PNG" alt="Census Bar Graph Picture"></img>
-			  <a class="btn btn-warning  mx-5" href="datavisualization.html" role="button">See the Stats &raquo;</a>
-		   </div>
-		<div class="col col-sm-12 col-lg-12" id='cancer'>
-			  <h3>New Cancer Instances - Data Visualization</h3>
-					  <p class= "mx-5">
-						To identify whether or not cancer prevention is working, I collected datasets from Center for Disease Control and Cancer.org. From there, I compared
-						these sets of data to the average population rate for the United States. The information, spanning from 1999 to 2016,
-						reveals a growing percentage of new cancer patients over the last two decades.
-					  </p>
-				  <img class="img-fluid" src="../img/uspopcan.PNG" alt="Census Bar Graph Picture"></img>
-			  <a class="btn btn-warning  mx-5" href="cancer.html" role="button">Check Your State &raquo;</a>
-		   </div>
-      
-	  <div class="col col-sm-12 col-lg-12" id='mtg'>
-			  <h3>MTG Basic Simulation - Data Visualization Stats</h3>
-					  <p class= "mx-5">
-						After completing the above Python project, I wanted to identify how often one deck wins over another in MTG.
-						Thus far, I can customize a deck in the back-end and the algorithm copies it, replaces mana with Evolving Wilds, 
-						then faces the decks against each other 100,000 times.</p>
-				  <img class="img-fluid" src="../img/mtg.PNG" alt="MTG Basic Simulation Picture"></img>
-			  <a class="btn btn-warning  mx-5" href="mtgdv.html" role="button">View Results &raquo;</a>
-		   </div>
-      </div>
 	</div>
 	
 	<div class="social-media">
