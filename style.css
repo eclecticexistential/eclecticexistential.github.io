@@ -161,3 +161,20 @@ footer {
 		justify-content:space-around;
 	}
 }
+
+@media (min-width:400px){
+	.reduce{
+		height: 25em;
+	}
+}
+
+@media (max-width:400px){
+	.hide{
+		visibility:hidden;
+	}
+	.reduce{
+		height: 16.5em;
+		margin-left:-3.5em;
+	}
+}
+
