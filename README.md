@@ -3,11 +3,9 @@
 Website created with Bootstrap as well as Flexbox to showcase CSS, jQuery, Javascript, and Ajax projects created by me.    
 The purpose of this website is to provide potential employers with a way to gauge my programming skills.     
 
-## __CSS__  
-Zen Garden Project showcases multiple css style designs. Styles can be cycled through via left and right buttons at the top.  
-Other project includes a challenging project that uses jQuery and CSS to manipulate images and corresponding profiles.
-The clicked image is placed on an overlay. This moves to reveal hidden text that corresponds to the image. Text and images alter based on left/right click.
-An exit button is provided to return overlay and images to original position.  
+## __Python__  
+Various Python related projects developed by me. Highlights include a Django/Heroku app, Magic The Gathering Simulation, and Data Science projects
+including but not limited to Data Visualization graphs.
 
 ## __Javascript__  
 Mini projects include a Body Mass Index calculator that works for metric and standard measurement types and a color picker that generates hues based on rgb values.  
